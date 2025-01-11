@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Riva Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <style>
+      @layer utilities {
+        .swiper-pagination-bullet-active {
+          background-color: #f59e0b;
+        }
+      }
+      p {
+        font-family: "Poppins", sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      .special-font {
+        font-family: "Playfair Display", serif;
+      }
+    </style>
+  </head>
+  <body class="font-sans antialiased">
+    <!-- Navbar -->
+    <header class="bg-transparent fixed w-full z-50">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <img
+          class="text-2xl font-bold text-white"
+          src="/public/assets/image 1.png"
+        />
+        <button id="menuToggle" class="lg:hidden text-white text-2xl">
+          &#9776;
+        </button>
+        <nav id="navbar" class="hidden lg:flex space-x-6">
+          <a href="index.html" class="text-white hover:text-orange-500">Home</a>
+          <a href="about.html" class="text-white hover:text-orange-500"
+            >About Us</a
+          >
+          <a href="rooms.html" class="text-white hover:text-orange-500"
+            >Rooms</a
+          >
+          <a href="#reservation" class="text-white hover:text-orange-500"
+            >Reservation</a
+          >
+          <a href="#gallery" class="text-white hover:text-orange-500"
+            >Gallery</a
+          >
+          <a href="#contact" class="text-white hover:text-orange-500"
+            >Contact</a
+          >
+        </nav>
+        <button
+          type="button"
+          class="btn lg:block hidden btn-outline-white border-white border-2 px-4 py-2 text-white"
+        >
+          Explore
+        </button>
+      </div>
+      <nav id="mobileMenu" class="lg:hidden hidden bg-gray-900">
+        <a
+          href="index.html"
+          class="block px-4 py-2 text-white hover:bg-orange-500"
+          >Home</a
+        >
+        <a
+          href="about.html"
+          class="block px-4 py-2 text-white hover:bg-orange-500"
+          >About Us</a
+        >
+        <a href="#rooms" class="block px-4 py-2 text-white hover:bg-orange-500"
+          >Rooms</a
+        >
+        <a
+          href="#reservation"
+          class="block px-4 py-2 text-white hover:bg-orange-500"
+          >Reservation</a
+        >
+        <a
+          href="#gallery"
+          class="block px-4 py-2 text-white hover:bg-orange-500"
+          >Gallery</a
+        >
+        <a
+          href="#contact"
+          class="block px-4 py-2 text-white hover:bg-orange-500"
+          >Contact</a
+        >
+      </nav>
+    </header>
+
+    <section
+      id="about"
+      class="py-20 bg-white bg-cover bg-center"
+      style="background-image: url('/public/assets/about.png')"
+    >
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-6">About Us</h2>
+        <div class="grid md:grid-cols-4 grid-cols-2 gap-10 bg-white">
+          <div class="text-center">
+            <h3 class="text-3xl font-semibold">54+</h3>
+            <p class="text-lg text-gray-600">Rooms</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-3xl font-semibold">12+</h3>
+            <p class="text-lg text-gray-600">Restaurants</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-3xl font-semibold">22+</h3>
+            <p class="text-lg text-gray-600">Shops</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-3xl font-semibold">20+</h3>
+            <p class="text-lg text-gray-600">Ferry Lands</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <div>
+            <img
+              alt="Modern bedroom with elegant decor"
+              class="w-full h-auto rounded-lg shadow-lg"
+              src="/public/assets/Rectangle 6 (1).png"
+            />
+          </div>
+          <div>
+            <p class="text-lg leading-relaxed mb-4">
+              Looking forward to a modern well-being, passionate endeavors, new
+              ideas, sports, and entertainment. Our hotel offers a wide range of
+              services to make your stay as comfortable and enjoyable as
+              possible. From luxurious rooms and suites to fine dining and
+              state-of-the-art fitness facilities, we have everything you need
+              to relax and unwind. Our friendly and professional staff is always
+              on hand to assist you with any requests or needs you may have. We
+              look forward to welcoming you to our hotel and making your stay a
+              memorable one.
+            </p>
+            <p class="text-lg leading-relaxed mb-4">
+              For your well-being, we offer a fully serviced spa, the best gym,
+              and a heated swimming pool. Our hotel is also equipped with a
+              business center, conference rooms, and high-speed internet access
+              to cater to all your business needs. We also offer a variety of
+              dining options, from casual cafes to fine dining restaurants,
+              serving a range of cuisines to suit all tastes.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <div class="relative">
+            <img
+              alt="Historic building illuminated at night"
+              class="w-full h-auto rounded-lg shadow-lg"
+              src="/public/assets/Rectangle 6 (2).png"
+            />
+            <div
+              class="absolute top-0 left-0 text-9xl text-gray-200 font-bold opacity-50"
+            >
+              01
+            </div>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold mb-4">Vision</h2>
+            <p class="text-lg leading-relaxed mb-4">
+              The ultimate vision of CASA SOUL is to stand out as the preferred
+              hotel with the highest standards of hospitality, service, and
+              quality.
+            </p>
+            <p class="text-lg leading-relaxed mb-4">
+              We are focused on providing an outstanding professional, ethical,
+              and transparent service to our guests.
+            </p>
+            <p class="text-lg leading-relaxed mb-4">
+              We aim to exceed our guests' expectations and experience our
+              commitment to excellence and dedication.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <div>
+            <h2 class="text-3xl font-bold mb-4">Mission</h2>
+            <p class="text-lg leading-relaxed mb-4">
+              The ultimate vision of CASA SOUL is to stand out as the preferred
+              hotel with the highest standards of hospitality, service, and
+              quality.
+            </p>
+            <p class="text-lg leading-relaxed mb-4">
+              We are focused on providing an outstanding professional, ethical,
+              and transparent service to our guests.
+            </p>
+            <p class="text-lg leading-relaxed mb-4">
+              We aim to exceed our guests' expectations and experience our
+              commitment to excellence and dedication.
+            </p>
+          </div>
+          <div class="relative">
+            <img
+              alt="Luxurious hotel building at night"
+              class="w-full h-auto rounded-lg shadow-lg"
+              src="/public/assets/Rectangle 6 (3).png"
+            />
+            <div
+              class="absolute top-0 left-0 text-9xl text-gray-200 font-bold opacity-50"
+            >
+              02
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="features" class="py-16 bg-white">
+      <div class="container mx-auto px-6 lg:px-12">
+        <div class="grid md:grid-cols-3 gap-8 items-center">
+          <!-- Left Column (Text for "Comfy Rooms" and "Sapphire Banquet Hall") -->
+          <div class="flex flex-col-reverse md:flex-col space-y-6 md:space-y-0">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800">Comfy Rooms</h3>
+              <p class="text-gray-600">
+                The hotel offers 54 well-appointed, spacious, and neat rooms for
+                you to relax during your stay here.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800">
+                Sapphire Banquet Hall
+              </h3>
+              <p class="text-gray-600">
+                The hotel also has a banquet hall that measures approx. 8500 sq
+                ft, with a height of about 22 feet. Ideal for weddings and
+                receptions in Surat.
+              </p>
+            </div>
+          </div>
+
+          <!-- Center Image -->
+          <div class="order-first md:order-none">
+            <img
+              src="/public/assets/Rectangle 6 (4).png"
+              alt="Comfy Room"
+              class="rounded-lg shadow-lg w-full object-cover"
+            />
+          </div>
+
+          <!-- Right Column (Text for "Salt Water Restaurant" and "Party Lawns") -->
+          <div class="flex flex-col space-y-6">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800">
+                Salt Water Restaurant
+              </h3>
+              <p class="text-gray-600">
+                The pure vegetarian open garden restaurant with 8 gazebos and a
+                seating of approx. 150 persons.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800">Party Lawns</h3>
+              <p class="text-gray-600">
+                Plush velvety green party lawns – Salt Water & Sapphire – each
+                with a capacity to cater up to 500 people can be your preferred
+                location for any occasion.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="bg-gray-900 py-16">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex flex-col items-start justify-between md:flex-row mt-4">
+          <div class="mb-8 md:mb-0">
+            <img
+              alt="Hotel Casa Riva logo"
+              class="mb-4"
+              height="100"
+              src="/public/assets/image 1.png"
+              width="100"
+            />
+            <p class="text-gray-400 mb-4">
+              Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga
+              illo laudantium magni sed.
+            </p>
+            <div class="flex space-x-4">
+              <a class="text-gray-400 hover:text-white" href="#">
+                <i class="fab fa-facebook-f"> </i>
+              </a>
+              <a class="text-gray-400 hover:text-white" href="#">
+                <i class="fab fa-twitter"> </i>
+              </a>
+              <a class="text-gray-400 hover:text-white" href="#">
+                <i class="fab fa-google"> </i>
+              </a>
+            </div>
+          </div>
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-orange-500 mb-4">Explore Us</h3>
+            <ul class="space-y-2">
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> Support </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> FAQ's </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#">
+                  Warranty
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-orange-500 mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> Home </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> Rooms </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#">
+                  Reservation
+                </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> Gallery </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> Videos </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> Contact </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-orange-500 mb-4">Contact Us</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center text-gray-400">
+                <i class="fas fa-phone-alt mr-2"> </i>
+                +91 - 7567 122 266
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="fas fa-envelope mr-2"> </i>
+                hotelcasariva.surat@gmail.com
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="fas fa-map-marker-alt mr-2"> </i>
+                Besides Mulberry Height, Behind Auro University, Village:
+                Bhatpore, Surat
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-gray-700 mt-10 pt-4 text-center text-gray-500 text-sm"
+      >
+        © 2016-23 Copyright. All Rights Reserved. Managed by -
+        <a class="text-gray-400 hover:text-white" href="#"> BR Media Net </a>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      var swiper2 = new Swiper(".swiper-container", {
+        slidesPerView: 5, // Number of slides to show at once
+        spaceBetween: 30, // Space between slides
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
