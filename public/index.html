@@ -28,14 +28,14 @@
         }
       }
       p {
-        font-family: "Poppins", sans-serif; 
+        font-family: "Poppins", sans-serif;
       }
 
       h1,
       h2,
       h3,
       .special-font {
-        font-family: "Playfair Display", serif; 
+        font-family: "Playfair Display", serif;
       }
     </style>
   </head>
@@ -54,15 +54,19 @@
         </button>
         <nav id="navbar" class="hidden lg:flex space-x-6">
           <a href="#" class="text-white hover:text-orange-500">Home</a>
-          <a href="about.html" class="text-white hover:text-orange-500">About Us</a>
-          <a href="#rooms" class="text-white hover:text-orange-500">Rooms</a>
-          <a href="#reservation" class="text-white hover:text-orange-500"
+          <a href="about.html" class="text-white hover:text-orange-500"
+            >About Us</a
+          >
+          <a href="rooms.html" class="text-white hover:text-orange-500"
+            >Rooms</a
+          >
+          <a href="reservation.html" class="text-white hover:text-orange-500"
             >Reservation</a
           >
-          <a href="#gallery" class="text-white hover:text-orange-500"
+          <a href="gallery.html" class="text-white hover:text-orange-500"
             >Gallery</a
           >
-          <a href="#contact" class="text-white hover:text-orange-500"
+          <a href="contact.html" class="text-white hover:text-orange-500"
             >Contact</a
           >
         </nav>
@@ -89,7 +93,7 @@
           >Reservation</a
         >
         <a
-          href="#gallery"
+          href="gallery.html"
           class="block px-4 py-2 text-white hover:bg-orange-500"
           >Gallery</a
         >
@@ -110,7 +114,7 @@
       <div
         class="relative z-10 h-full flex flex-col justify-center items-center text-center text-white"
       >
-        <h1 class="text-2xl	 lg:text-7xl font-bold mb-4 w-[500px] lg:w-[550px]">
+        <h1 class="text-2xl lg:text-7xl font-bold mb-4 w-[500px] lg:w-[550px]">
           Welcome To Casa Riva Hotel
         </h1>
         <p class="text-sm lg:text-xl mb-8 max-w-2xl font-Poppins">
@@ -121,11 +125,11 @@
         <p class="mt-4">Scroll To View</p>
       </div>
     </section>
-  <!-- About Section  -->
+    <!-- About Section  -->
     <section class="relative max-w-7xl mx-auto py-16 px-6">
       <!-- Background Text -->
       <h1
-        class="absolute text-[150px] font-bold text-[#A9774E] opacity-20 top-60 right-0"
+        class="absolute text-[150px] font-bold text-[#9C8B8A] opacity-20 top-60 right-0"
       >
         About Us
       </h1>
@@ -176,7 +180,7 @@
 
           <!-- About Us Content -->
           <div class="mt-16">
-            <p class="text-[#A9774E]">About Us</p>
+            <p class="text-[#9C8B8A]">About Us</p>
             <h2 class="text-4xl font-bold text-gray-900 mb-4">
               The World's Luxurious Hotel
             </h2>
@@ -198,7 +202,7 @@
             <div class="mt-6">
               <a
                 href="#"
-                class="bg-[#A9774E] text-white px-6 py-3 rounded-lg shadow-lg hover:bg-orange-600 transition"
+                class="bg-[#9C8B8A] text-white px-6 py-3 rounded-lg shadow-lg hover:bg-orange-600 transition"
               >
                 More About Us →
               </a>
@@ -224,10 +228,8 @@
           <p class="text-orange-500">
             Vibrant ambience, luxury and comfort meets only here...
           </p>
-          <h2 class="text-3xl font-bold">
-            Room Information Master
-          </h2>
-         </div>
+          <h2 class="text-3xl font-bold">Room Information Master</h2>
+        </div>
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide flex gap-4 justify-between">
@@ -295,7 +297,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide  flex gap-4 justify-between">
+            <div class="swiper-slide flex gap-4 justify-between">
               <div class="part-1 relative">
                 <img
                   src="/public/assets/Rectangle 8.png"
@@ -439,85 +441,118 @@
 
     <!-- Our services  -->
     <section class="py-16">
-      <div class="container mx-auto  px-4">
+      <div class="container mx-auto px-4">
         <div class="text-center mb-12">
-         <p class="text-orange-500">
-          Casariva Hotel provides all services you need.
-         </p>
-         <h2 class="text-3xl font-bold">
-          Our Services
-         </h2>
+          <p class="text-orange-500">
+            Casariva Hotel provides all services you need.
+          </p>
+          <h2 class="text-3xl font-bold">Our Services</h2>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-         <div class="bg-white shadow-lg rounded-lg p-6  relative">
-          <div class="absolute font-Playfair right-4 text-[#C3A464] text-[30px] top-4">
-           01
+
+        <!-- Grid Container for Services -->
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Service 1 -->
+          <div class="bg-white shadow-lg rounded-lg p-6 relative">
+            <div
+              class="absolute font-Playfair right-4 text-[#C3A464] text-[30px] top-4"
+            >
+              01
+            </div>
+            <img
+              alt="Swimming Pool Icon"
+              class="mb-4"
+              height="50"
+              src="/public/assets/Group 30.svg"
+              width="50"
+            />
+            <h3 class="text-xl font-bold mb-2">Swimming Pool</h3>
+            <p class="text-gray-600">
+              Offering a relaxed swim in our four feet deep pool
+            </p>
           </div>
-          <img alt="Swimming Pool Icon" class=" mb-4" height="50" src="/public/assets/Group 30.svg" width="50"/>
-          <h3 class="text-xl font-bold mb-2">
-           Swimming Pool
-          </h3>
-          <p class="text-gray-600">
-           Offering a relaxed swim in our four feet deep pool
-          </p>
-         </div>
-         <div class="bg-white shadow-lg rounded-lg p-6  relative">
-          <div class="absolute font-Playfair right-4 text-[#C3A464] text-[30px] top-4">
-           02
+
+          <!-- Service 2 -->
+          <div class="bg-white shadow-lg rounded-lg p-6 relative">
+            <div
+              class="absolute font-Playfair right-4 text-[#C3A464] text-[30px] top-4"
+            >
+              02
+            </div>
+            <img
+              alt="Free Wifi Icon"
+              class="mb-4"
+              height="50"
+              src="/public/assets/Group 31.svg"
+              width="50"
+            />
+            <h3 class="text-xl font-bold mb-2">Free Wifi</h3>
+            <p class="text-gray-600">
+              Enjoy unlimited use of our 5MBPS wi-fi network
+            </p>
           </div>
-          <img alt="Free Wifi Icon" class=" mb-4" height="50" src="/public/assets/Group 31.svg" width="50"/>
-          <h3 class="text-xl font-bold mb-2">
-           Free Wifi
-          </h3>
-          <p class="text-gray-600">
-           Enjoy unlimited use of our 5MBPS wi-fi network
-          </p>
-         </div>
-         <div class="bg-white shadow-lg rounded-lg p-6  relative">
-          <div class="absolute font-Playfair right-4 text-[#C3A464] text-[30px] top-4">
-           03
+
+          <!-- Service 3 (Hidden initially on mobile) -->
+          <div
+            class="bg-white shadow-lg rounded-lg p-6 relative service-item hidden md:block"
+          >
+            <div
+              class="absolute font-Playfair right-4 text-[#C3A464] text-[30px] top-4"
+            >
+              03
+            </div>
+            <img
+              alt="Pickup/Drop Icon"
+              class="mb-4"
+              height="50"
+              src="/public/assets/Group 32.svg"
+              width="50"
+            />
+            <h3 class="text-xl font-bold mb-2">Pickup/Drop</h3>
+            <p class="text-gray-600">
+              Pickup and drop facility from Surat Airport or Railway
+            </p>
           </div>
-          <img alt="Pickup/Drop Icon" class=" mb-4" height="50" src="/public/assets/Group 32.svg" width="50"/>
-          <h3 class="text-xl font-bold mb-2">
-           Pickup/Drop
-          </h3>
-          <p class="text-gray-600">
-           Pickup and drop facility from Surat Airport or Railway
-          </p>
-         </div>
-         <div class="bg-white shadow-lg rounded-lg p-6  relative">
-          <div class="absolute font-Playfair right-4 text-[#C3A464] text-[30px] top-4">
-           04
+
+          <!-- Service 4 (Hidden initially on mobile) -->
+          <div
+            class="bg-white shadow-lg rounded-lg p-6 relative service-item hidden md:block"
+          >
+            <div
+              class="absolute font-Playfair right-4 text-[#C3A464] text-[30px] top-4"
+            >
+              04
+            </div>
+            <img
+              alt="Breakfast Icon"
+              class="mb-4"
+              height="50"
+              src="/public/assets/Group 33.svg"
+              width="50"
+            />
+            <h3 class="text-xl font-bold mb-2">Breakfast</h3>
+            <p class="text-gray-600">
+              Sumptuous Indian / Continental breakfast
+            </p>
           </div>
-          <img alt="Breakfast Icon" class=" mb-4" height="50" src="/public/assets/Group 33.svg" width="50"/>
-          <h3 class="text-xl font-bold mb-2">
-           Breakfast
-          </h3>
-          <p class="text-gray-600">
-           Sumptuous Indian / Continental breakfast
-          </p>
-         </div>
         </div>
+
+        <!-- Show/Hide Button (Only on mobile) -->
         <div class="text-center mt-8">
-          <button class="bg-[#d4a373] text-white px-6 py-2">
+          <button id="showMoreBtn" class="bg-[#d4a373] text-white px-6 py-2">
             View All Rooms
-            <i class="fas fa-arrow-right ml-2"> </i>
+            <i class="fas fa-arrow-down ml-2"> </i>
           </button>
         </div>
-       </div>
+      </div>
     </section>
 
     <!-- Gallery Section  -->
     <section class="py-16">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
-          <p class="text-orange-500">
-            Our Popular Images
-          </p>
-          <h2 class="text-3xl font-bold">
-            Gallery
-          </h2>
-         </div>
+          <p class="text-orange-500">Our Popular Images</p>
+          <h2 class="text-3xl font-bold">Gallery</h2>
+        </div>
         <div class="flex justify-between items-center mb-4">
           <!-- <div class="flex space-x-4">
             <button
@@ -616,459 +651,601 @@
       </div>
     </section>
 
-   
-<!-- Testimonials Section -->
-<section class="py-16">
-  <div class="container mx-auto px-4">
-    <div class="text-center mb-12">
-      <p class="text-orange-500">What people are saying</p>
-      <h2 class="text-3xl font-bold">Testimonials</h2>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Testimonial 1 -->
-      <div class="bg-white p-6 rounded-lg shadow-lg">
-        <div class="flex justify-between">
-
-          <div class="mb-4">
-            <img alt="Photo of Hotel User" class="lg:w-[120px] lg:h-[120px]  mr-4" height="60" src="/public/assets/Rectangle 288.png" width="60">
-            <div>
-              <h3 class="lg:text-[25px] text-[#A9774E] font-semibold">Hotel User</h3>
-              <p class="lg:text-lg	 text-black font-normal">Seater of Thimpressa</p>
-            </div>
-          </div>
-          <div class="flex items-center">
-            <img src="/public/assets/Vector.svg" class="fas fa-quote-right text-orange-500 text-2xl"> 
-          </div>
-        </div>
-        <p class="text-gray-600 mb-4">
-          Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga.
-          Ido laudantium magni sed temporibus. Amet atque aut autem
-          consequatur consequuntur dolorem enim.
-        </p>
-       
-        <div class="flex mt-4">
-          <img src="/public/assets/Frame.svg" class="text-orange-500">
-          <img src="/public/assets/Frame.svg" class="text-orange-500">
-          <img src="/public/assets/Frame.svg" class="text-orange-500">
-          <img src="/public/assets/Frame.svg" class="text-orange-500">
-          <img src="/public/assets/Frame.svg" class="text-orange-500">
-        </div>
-      </div>
-      <!-- Testimonial 2 -->
-      <div class="bg-white p-6 rounded-lg shadow-lg">
-        <div class="flex justify-between">
-
-          <div class="mb-4">
-            <img alt="Photo of Hotel Booking Expert" class="lg:w-[120px] lg:h-[120px] mr-4" height="60" src="/public/assets/Rectangle 289.png" width="60">
-            <div>
-              <h3 class="lg:text-[25px] text-[#A9774E] font-semibold">Wordpress User</h3>
-              <p class="lg:text-lg	text-black font-normal">CEO of Touristlink</p>
-            </div>
-          </div>
-          <div class="flex items-center">
-            <img src="/public/assets/Vector.svg" class="fas fa-quote-right text-orange-500 text-2xl"> 
-          </div>
-        </div>
-        <p class="text-gray-600 mb-4">
-          Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga.
-          Ido laudantium magni sed temporibus. Amet atque aut autem
-          consequatur consequuntur dolorem enim.
-        </p>
-        <div class="flex items-center">
-          <i class="fas fa-quote-right text-orange-500 text-2xl"> </i>
-        </div>
-        <div class="flex mt-4">
-          <img src="/public/assets/Frame.svg" class="text-orange-500">
-          <img src="/public/assets/Frame.svg" class="text-orange-500">
-          <img src="/public/assets/Frame.svg" class="text-orange-500">
-          <img src="/public/assets/Frame.svg" class="text-orange-500">
-          <img src="/public/assets/Frame.svg" class="text-orange-500">
-        </div>
-      </div>
-      <!-- Testimonial 3 -->
-      <div class="bg-white p-6 rounded-lg shadow-lg">
-        <div class="flex justify-between">
-
-          <div class="mb-4">
-            <img alt="Photo of Hotel Booking Expert" class="lg:w-[120px] lg:h-[120px]  mr-4" height="60" src="/public/assets/Rectangle 290.png" width="60">
-            <div>
-              <h3 class="lg:text-[25px] text-[#A9774E] font-semibold">Hotel Booking Expert</h3>
-              <p class="lg:text-lg	 text-black font-normal">Copyright of Foobla</p>
-            </div>
-          </div>
-          <div class="flex items-center">
-            <img src="/public/assets/Vector.svg" class="  text-2xl"> 
-          </div>
-        </div>
-        <p class="text-gray-600 mb-4">
-          Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga.
-          Ido laudantium magni sed temporibus. Amet atque aut autem
-          consequatur consequuntur dolorem enim.
-        </p>
-       
-        <div class="flex mt-4">
-          <img src="/public/assets/Frame.svg" class="text-orange-500">
-          <img src="/public/assets/Frame.svg" class="text-orange-500">
-          <img src="/public/assets/Frame.svg" class="text-orange-500">
-          <img src="/public/assets/Frame.svg" class="text-orange-500">
-          <img src="/public/assets/Frame.svg" class="text-orange-500">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Upcoming Events Section -->
+    <!-- Testimonials Section -->
     <section class="py-16">
-      <div class="container mx-auto px-4 ">
-        <div class="text-center mb-8">
-            <p class="text-orange-600">
-                What people are saying
-            </p>
-            <h1 class="text-3xl font-bold">
-                Upcoming Events
-            </h1>
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <p class="text-orange-500">What people are saying</p>
+          <h2 class="text-3xl font-bold">Testimonials</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <div class="relative">
-                    <img alt="Reception area with a person checking in" class="w-full h-48 object-cover" height="400" src="/public/assets/Rectangle 295.png" width="600"/>
-                    <div class="absolute top-0 left-0 bg-white text-center p-2">
-                        <p class="text-orange-600 font-bold">
-                            23
-                        </p>
-                        <p class="text-gray-600 text-right">
-                            Aug
-                        </p>
-                    </div>
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex justify-between">
+              <div class="mb-4">
+                <img
+                  alt="Photo of Hotel User"
+                  class="lg:w-[120px] lg:h-[120px] mr-4"
+                  height="60"
+                  src="/public/assets/Rectangle 288.png"
+                  width="60"
+                />
+                <div>
+                  <h3 class="lg:text-[25px] text-[#9C8B8A] font-semibold">
+                    Hotel User
+                  </h3>
+                  <p class="lg:text-lg text-black font-normal">
+                    Seater of Thimpressa
+                  </p>
                 </div>
-                <div class="p-4">
-                    <h2 class="font-bold text-lg">
-                        The Salt Water Restaurant
-                    </h2>
-                    <p class="text-gray-600 mt-2">
-                        Enjoy a lavish meal at the Salt Water Restaurant multi cuisine restaurant with eight elegant gazebos... get treated like
-                    </p>
-                </div>
+              </div>
+              <div class="flex items-center">
+                <img
+                  src="/public/assets/Vector.svg"
+                  class="fas fa-quote-right text-orange-500 text-2xl"
+                />
+              </div>
             </div>
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <div class="relative">
-                    <img alt="Family party in a cozy room" class="w-full h-48 object-cover" height="400" src="/public/assets/Rectangle 296.png" width="600"/>
-                    <div class="absolute top-0 left-0 bg-white text-center p-2">
-                        <p class="text-orange-600 font-bold">
-                            27
-                        </p>
-                        <p class="text-gray-600 text-right">
-                            Aug
-                        </p>
-                    </div>
-                </div>
-                <div class="p-4">
-                    <h2 class="font-bold text-lg">
-                        Host a Family Party
-                    </h2>
-                    <p class="text-gray-600 mt-2">
-                        When you host a party or family reunion, the special celebrations let you strengthen bonds with those you hold most
-                    </p>
-                </div>
+            <p class="text-gray-600 mb-4">
+              Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga.
+              Ido laudantium magni sed temporibus. Amet atque aut autem
+              consequatur consequuntur dolorem enim.
+            </p>
+
+            <div class="flex mt-4">
+              <img src="/public/assets/Frame.svg" class="text-orange-500" />
+              <img src="/public/assets/Frame.svg" class="text-orange-500" />
+              <img src="/public/assets/Frame.svg" class="text-orange-500" />
+              <img src="/public/assets/Frame.svg" class="text-orange-500" />
+              <img src="/public/assets/Frame.svg" class="text-orange-500" />
             </div>
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <div class="relative">
-                    <img alt="Luxurious hotel room" class="w-full h-48 object-cover" height="400" src="/public/assets/Rectangle 297.png" width="600"/>
-                    <div class="absolute top-0 left-0 bg-white text-center p-2">
-                        <p class="text-orange-600 font-bold">
-                            23
-                        </p>
-                        <p class="text-gray-600 text-right">
-                            Aug
-                        </p>
-                    </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex justify-between">
+              <div class="mb-4">
+                <img
+                  alt="Photo of Hotel Booking Expert"
+                  class="lg:w-[120px] lg:h-[120px] mr-4"
+                  height="60"
+                  src="/public/assets/Rectangle 289.png"
+                  width="60"
+                />
+                <div>
+                  <h3 class="lg:text-[25px] text-[#9C8B8A] font-semibold">
+                    Wordpress User
+                  </h3>
+                  <p class="lg:text-lg text-black font-normal">
+                    CEO of Touristlink
+                  </p>
                 </div>
-                <div class="p-4">
-                    <h2 class="font-bold text-lg">
-                        The Salt Water Restaurant
-                    </h2>
-                    <p class="text-gray-600 mt-2">
-                        Enjoy a lavish meal at the Salt Water Restaurant multi cuisine restaurant with eight elegant gazebos... get treated like
-                    </p>
-                </div>
+              </div>
+              <div class="flex items-center">
+                <img
+                  src="/public/assets/Vector.svg"
+                  class="fas fa-quote-right text-orange-500 text-2xl"
+                />
+              </div>
             </div>
+            <p class="text-gray-600 mb-4">
+              Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga.
+              Ido laudantium magni sed temporibus. Amet atque aut autem
+              consequatur consequuntur dolorem enim.
+            </p>
+            <div class="flex items-center">
+              <i class="fas fa-quote-right text-orange-500 text-2xl"> </i>
+            </div>
+            <div class="flex mt-4">
+              <img src="/public/assets/Frame.svg" class="text-orange-500" />
+              <img src="/public/assets/Frame.svg" class="text-orange-500" />
+              <img src="/public/assets/Frame.svg" class="text-orange-500" />
+              <img src="/public/assets/Frame.svg" class="text-orange-500" />
+              <img src="/public/assets/Frame.svg" class="text-orange-500" />
+            </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex justify-between">
+              <div class="mb-4">
+                <img
+                  alt="Photo of Hotel Booking Expert"
+                  class="lg:w-[120px] lg:h-[120px] mr-4"
+                  height="60"
+                  src="/public/assets/Rectangle 290.png"
+                  width="60"
+                />
+                <div>
+                  <h3 class="lg:text-[25px] text-[#9C8B8A] font-semibold">
+                    Hotel Booking Expert
+                  </h3>
+                  <p class="lg:text-lg text-black font-normal">
+                    Copyright of Foobla
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <img src="/public/assets/Vector.svg" class="text-2xl" />
+              </div>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga.
+              Ido laudantium magni sed temporibus. Amet atque aut autem
+              consequatur consequuntur dolorem enim.
+            </p>
+
+            <div class="flex mt-4">
+              <img src="/public/assets/Frame.svg" class="text-orange-500" />
+              <img src="/public/assets/Frame.svg" class="text-orange-500" />
+              <img src="/public/assets/Frame.svg" class="text-orange-500" />
+              <img src="/public/assets/Frame.svg" class="text-orange-500" />
+              <img src="/public/assets/Frame.svg" class="text-orange-500" />
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8">
+          <p class="text-orange-600">What people are saying</p>
+          <h1 class="text-3xl font-bold">Upcoming Events</h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="relative">
+              <img
+                alt="Reception area with a person checking in"
+                class="w-full h-48 object-cover"
+                height="400"
+                src="/public/assets/Rectangle 295.png"
+                width="600"
+              />
+              <div class="absolute top-0 left-0 bg-white text-center p-2">
+                <p class="text-orange-600 font-bold">23</p>
+                <p class="text-gray-600 text-right">Aug</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <h2 class="font-bold text-lg">The Salt Water Restaurant</h2>
+              <p class="text-gray-600 mt-2">
+                Enjoy a lavish meal at the Salt Water Restaurant multi cuisine
+                restaurant with eight elegant gazebos... get treated like
+              </p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="relative">
+              <img
+                alt="Family party in a cozy room"
+                class="w-full h-48 object-cover"
+                height="400"
+                src="/public/assets/Rectangle 296.png"
+                width="600"
+              />
+              <div class="absolute top-0 left-0 bg-white text-center p-2">
+                <p class="text-orange-600 font-bold">27</p>
+                <p class="text-gray-600 text-right">Aug</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <h2 class="font-bold text-lg">Host a Family Party</h2>
+              <p class="text-gray-600 mt-2">
+                When you host a party or family reunion, the special
+                celebrations let you strengthen bonds with those you hold most
+              </p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="relative">
+              <img
+                alt="Luxurious hotel room"
+                class="w-full h-48 object-cover"
+                height="400"
+                src="/public/assets/Rectangle 297.png"
+                width="600"
+              />
+              <div class="absolute top-0 left-0 bg-white text-center p-2">
+                <p class="text-orange-600 font-bold">23</p>
+                <p class="text-gray-600 text-right">Aug</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <h2 class="font-bold text-lg">The Salt Water Restaurant</h2>
+              <p class="text-gray-600 mt-2">
+                Enjoy a lavish meal at the Salt Water Restaurant multi cuisine
+                restaurant with eight elegant gazebos... get treated like
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- video Section  -->
     <section class="text-center py-16">
-      <h2 class="text-sm text-orange-500">
-       What people are saying
-      </h2>
-      <h1 class="text-3xl font-bold mt-2">
-       Videos
-      </h1>
-     </section>
-     <section class="relative">
+      <h2 class="text-sm text-orange-500">What people are saying</h2>
+      <h1 class="text-3xl font-bold mt-2">Videos</h1>
+    </section>
+
+    <section class="relative">
       <div class="relative">
-       <img alt="Background image of a luxurious interior" class="w-full h-96 object-cover opacity-50" height="400" src="/public/assets/Rectangle 19.png" width="1200"/>
-       <button class="absolute inset-0 flex items-center justify-center">
-        <img src="/public/assets/Group 11.svg" class="text-6xl">
-        </img>
-       </button>
+        <img
+          alt="Background image of a luxurious interior"
+          class="w-full h-96 object-cover opacity-50"
+          height="400"
+          src="/public/assets/Rectangle 19.png"
+          width="1200"
+        />
+        <button class="absolute inset-0 flex items-center justify-center">
+          <img src="/public/assets/Group 11.svg" class="text-6xl" />
+        </button>
       </div>
       <div class="flex justify-center mt-[-30px] space-x-4 z-90">
-       <img alt="Thumbnail of a meeting room" class="w-48 h-32 object-cover" height="150" src="/public/assets/video1.png" width="200"/>
-       <img alt="Thumbnail of a bedroom" class="w-48 h-32 object-cover" height="150" src="/public/assets/video2.png" width="200"/>
-       <img alt="Thumbnail of a pool area" class="w-48 h-32 object-cover" height="150" src="/public/assets/video3.png" width="200"/>
-       <img alt="Thumbnail of a living room with a view" class="w-48 h-32 object-cover" height="150" src="/public/assets/video4.png" width="200"/>
+        <img
+          alt="Thumbnail of a meeting room"
+          class="w-48 h-32 object-cover"
+          height="150"
+          src="/public/assets/video1.png"
+          width="200"
+        />
+        <img
+          alt="Thumbnail of a bedroom"
+          class="w-48 h-32 object-cover"
+          height="150"
+          src="/public/assets/video2.png"
+          width="200"
+        />
+        <img
+          alt="Thumbnail of a pool area"
+          class="w-48 h-32 object-cover"
+          height="150"
+          src="/public/assets/video3.png"
+          width="200"
+        />
+        <img
+          alt="Thumbnail of a living room with a view"
+          class="w-48 h-32 object-cover"
+          height="150"
+          src="/public/assets/video4.png"
+          width="200"
+        />
       </div>
       <div class="flex justify-center mt-4 space-x-2">
-       <button class=" p-2 ">
-        <img src="/public/assets/Group 22.svg" class="">
-        </img>
-       </button>
-       <button class=" p-2 ">
-        <img src="/public/assets/Group 20.svg" class="">
-        </i>
-       </button>
+        <button class="p-2">
+          <img src="/public/assets/Group 22.svg" class="" />
+        </button>
+        <button class="p-2">
+          <img src="/public/assets/Group 20.svg" class="" />
+        </button>
       </div>
-     </section>
+    </section>
 
-     <!-- Form -->
-      <section class="py-16">
-         <div class="container mx-auto "  style="background-image: url('/public/assets/Rectangle 292.png');">
-
-           <div class="flex justify-center items-center min-h-screen">
-             <div class="relative w-full max-w-4xl">
-              <img alt="Luxurious hotel lobby with elegant furniture and lighting" class="w-full h-96 object-cover" height="400" src="/public/assets/Rectangle 292.png" width="800"/>
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center">
-               <div class="text-white p-8">
-                <h1 class="text-4xl font-bold mb-4">
-                 Book Room
+    <!-- Form -->
+    <section class="py-16">
+      <div
+        class="bg-no-repeat bg-top container h-auto lg:bg-center lg:bg-cover mx-auto"
+        style="background-image: url('/public/assets/Rectangle 292.png')"
+      >
+        <div class="flex h-full items-center justify-center py-8">
+          <div
+            class="flex flex-col items-center lg:flex- lg:flex-row max-w-5xl w-full"
+          >
+            <div class="bg-white bg-opacity-10">
+              <div class="text-white p-8">
+                <h1 class="lg:text-5xl text-3xl font-bold font-Playfair mb-4">
+                  Book Room
                 </h1>
-                <p class="mb-4 ">
-                 Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo laudantium magni sed temporibus. At aut placeat ex autem.
+                <p class="mb-4 lg:text-lg text-base font-normal text-white">
+                  Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda
+                  fuga illo laudantium magni sed temporibus. At aut placeat ex
+                  autem.
                 </p>
-                <p class="mb-2">
-                 <i class="fas fa-envelope mr-2">
-                 </i>
-                 booking@yourwebsite.com
+                <p class="mb-2"></p>
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="/public/assets/email.svg"
+                    class="w-[24px] h-[24px]"
+                    alt=""
+                  />
+                  <span class="lg:text-lg text-sm font-Poppins font-normal"
+                    >email</span
+                  >
+                </div>
+                <p class="lg:text-base text-xs font-normal font-Poppins">
+                  booking@yourwebsite.com
                 </p>
-                <p>
-                 <i class="fas fa-phone mr-2">
-                 </i>
-                 +123 456 7890
+
+                <p class="mb-2"></p>
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="/public/assets/call.svg"
+                    class="w-[24px] h-[24px]"
+                    alt=""
+                  />
+                  <span class="lg:text-lg text-sm font-Poppins font-normal"
+                    >phone</span
+                  >
+                </div>
+                <p class="lg:text-base text-xs font-normal font-Poppins">
+                  +123 456 7890
                 </p>
-               </div>
               </div>
-              <div class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-8 shadow-lg w-full max-w-md">
-               <h2 class="text-2xl font-bold mb-4">
-                Reservation
-               </h2>
-               <form>
-                <div class="mb-4">
-                 <label class="block text-gray-700 mb-2" for="hotel">
-                  Select Hotels
-                 </label>
-                 <select class="w-full border border-gray-300 p-2 rounded" id="hotel">
-                  <option>
-                   Hotel SuperStar
-                  </option>
-                 </select>
-                </div>
-                <div class="flex space-x-4 mb-4">
-                 <div class="w-1/2">
-                  <label class="block text-gray-700 mb-2" for="checkin">
-                   Check In Date
-                  </label>
-                  <input class="w-full border border-gray-300 p-2 rounded" id="checkin" type="date"/>
-                 </div>
-                 <div class="w-1/2">
-                  <label class="block text-gray-700 mb-2" for="checkout">
-                   Check Out Date
-                  </label>
-                  <input class="w-full border border-gray-300 p-2 rounded" id="checkout" type="date"/>
-                 </div>
-                </div>
-                <div class="mb-4">
-                 <label class="block text-gray-700 mb-2" for="rooms">
-                  No. of Room
-                 </label>
-                 <select class="w-full border border-gray-300 p-2 rounded" id="rooms">
-                  <option>
-                   1
-                  </option>
-                 </select>
-                </div>
-                <div class="mb-4">
-                 <label class="block text-gray-700 mb-2" for="room1">
-                  Room 1
-                 </label>
-                 <select class="w-full border border-gray-300 p-2 rounded" id="room1">
-                  <option>
-                   1 Adult
-                  </option>
-                  <option>
-                   1 Child
-                  </option>
-                 </select>
-                </div>
-                <button class="w-full bg-brown-500 text-white p-2 rounded" type="submit">
-                 Search Room
-                </button>
-               </form>
-              </div>
-             </div>
             </div>
-         </div>
-      </section>
+            <div class="bg-white p-8 shadow-lg">
+              <h2
+                class="lg:text-[25px] font-semibold text-lg font-Playfair font-bold mb-4"
+              >
+                Reservation
+              </h2>
+              <form>
+                <div class="mb-4">
+                  <label
+                    class="block lg:text-lg font-Poppins text-black font-normal mb-2"
+                    for="hotel"
+                  >
+                    Select Hotels
+                  </label>
+                  <div class="relative">
+                    <select
+                      class="w-full border border-gray-300 p-2 rounded text-[#9C8B8A] lg:text-base"
+                      id="hotel"
+                    >
+                      <option
+                        value=""
+                        disabled
+                        selected
+                        class="text-[#9C8B8A] lg:text-base"
+                      >
+                        Hotel SuperStar
+                      </option>
+                      <option>Hotel 1</option>
+                      <option>Hotel 2</option>
+                    </select>
+                    <!-- Icon -->
+                    <i
+                      class="fas fa-hotel absolute right-3 top-1/2 transform -translate-y-1/2 text-[#9C8B8A]"
+                    ></i>
+                  </div>
+                </div>
 
-    <!-- Footer  -->
-    <footer class="bg-gray-900 py-16 ">
-      <div class="container mx-auto px-4 py-4 ">
-        <div class="flex flex-col items-start justify-between md:flex-row mt-4">
+                <div class="flex space-x-4 mb-4">
+                  <div class="w-1/2">
+                    <label
+                      class="block lg:text-lg font-Poppins text-black font-normal mb-2"
+                      for="checkin"
+                    >
+                      Check In Date
+                    </label>
+                    <input
+                      class="w-full border border-gray-300 p-2 rounded text-[#9C8B8A]"
+                      id="checkin"
+                      type="date"
+                    />
+                  </div>
+                  <div class="w-1/2">
+                    <label
+                      class="block lg:text-lg font-Poppins text-black font-normal mb-2"
+                      for="checkout"
+                    >
+                      Check Out Date
+                    </label>
+                    <input
+                      class="w-full border border-gray-300 p-2 rounded text-[#9C8B8A]"
+                      id="checkout"
+                      type="date"
+                    />
+                  </div>
+                </div>
 
-          <div class="mb-8 md:mb-0">
-           <img alt="Hotel Casa Riva logo" class="mb-4" height="100" src="/public/assets/image 1.png" width="100"/>
-           <p class="text-gray-400 mb-4 lg:w-[320px] ">
-            Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo laudantium magni sed.
-           </p>
-           <div class="flex space-x-4">
-            <a class="text-gray-400 hover:text-white" href="#">
-             <i class="fab fa-facebook-f">
-             </i>
-            </a>
-            <a class="text-gray-400 hover:text-white" href="#">
-             <i class="fab fa-twitter">
-             </i>
-            </a>
-            <a class="text-gray-400 hover:text-white" href="#">
-             <i class="fab fa-google">
-             </i>
-            </a>
-           </div>
-          </div>
-          <div class="mb-8 md:mb-0">
-           <h3 class="text-orange-500 mb-4">
-            Explore Us
-           </h3>
-           <ul class="space-y-2">
-            <li>
-             <a class="text-gray-400 hover:text-white" href="#">
-              Support
-             </a>
-            </li>
-            <li>
-             <a class="text-gray-400 hover:text-white" href="#">
-              FAQ's
-             </a>
-            </li>
-            <li>
-             <a class="text-gray-400 hover:text-white" href="#">
-              Warranty
-             </a>
-            </li>
-           </ul>
-          </div>
-          <div class="mb-8 md:mb-0">
-           <h3 class="text-orange-500 mb-4">
-            Quick Links
-           </h3>
-           <ul class="space-y-2">
-            <li>
-             <a class="text-gray-400 hover:text-white" href="#">
-              Home
-             </a>
-            </li>
-            <li>
-             <a class="text-gray-400 hover:text-white" href="#">
-              Rooms
-             </a>
-            </li>
-            <li>
-             <a class="text-gray-400 hover:text-white" href="#">
-              Reservation
-             </a>
-            </li>
-            <li>
-             <a class="text-gray-400 hover:text-white" href="#">
-              About Us
-             </a>
-            </li>
-            <li>
-             <a class="text-gray-400 hover:text-white" href="#">
-              Gallery
-             </a>
-            </li>
-            <li>
-             <a class="text-gray-400 hover:text-white" href="#">
-              Videos
-             </a>
-            </li>
-            <li>
-             <a class="text-gray-400 hover:text-white" href="#">
-              Contact
-             </a>
-            </li>
-           </ul>
-          </div>
-          <div class="mb-8 md:mb-0">
-           <h3 class="text-orange-500 mb-4">
-            Contact Us
-           </h3>
-           <ul class="space-y-2">
-            <li class="flex items-center text-gray-400">
-             <i class="fas fa-phone-alt mr-2">
-             </i>
-             +91 - 7567 122 266
-            </li>
-            <li class="flex items-center text-gray-400">
-             <i class="fas fa-envelope mr-2">
-             </i>
-             hotelcasariva.surat@gmail.com
-            </li>
-            <li class="flex items-center text-gray-400">
-             <i class="fas fa-map-marker-alt mr-2">
-             </i>
-             Besides Mulberry Height, Behind Auro University, Village: Bhatpore, Surat
-            </li>
-           </ul>
+                <div class="mb-4">
+                  <label
+                    class="block lg:text-lg font-Poppins text-black font-normal mb-2"
+                    for="rooms"
+                  >
+                    No. of Room
+                  </label>
+                  <div class="relative">
+                    <select
+                      class="w-full border border-gray-300 p-2 rounded text-[#9C8B8A]"
+                      id="rooms"
+                    >
+                      <option value="" disabled selected class="text-[#9C8B8A]">
+                        Select
+                      </option>
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                    <!-- Icon -->
+                    <i
+                      class="fas fa-bed absolute right-3 top-1/2 transform -translate-y-1/2 text-[#9C8B8A]"
+                    ></i>
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <label
+                    class="block lg:text-lg font-Poppins text-black font-normal mb-2"
+                    for="room1"
+                  >
+                    Room 1
+                  </label>
+                  <div class="relative">
+                    <select
+                      class="w-full border border-gray-300 p-2 rounded text-[#9C8B8A]"
+                      id="room1"
+                    >
+                      <option value="" disabled selected class="text-[#9C8B8A]">
+                        Select
+                      </option>
+                      <option>1 Adult</option>
+                      <option>1 Child</option>
+                    </select>
+                    <!-- Icon -->
+                    <i
+                      class="fas fa-user absolute right-3 top-1/2 transform -translate-y-1/2 text-[#9C8B8A]"
+                    ></i>
+                  </div>
+                </div>
+
+                <button
+                  class="w-full bg-[#9C8B8A] text-white p-2 rounded flex justify-center bg-[#A9774E]"
+                  type="submit"
+                >
+                  Search Room
+                  <img src="/public/assets/Group 10.svg" alt="" />
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-      <div class="border-t border-gray-700 mt-10 pt-4 text-center text-gray-500 text-sm">
-       © 2016-23 Copyright. All Rights Reserved. Managed by -
-       <a class="text-gray-400 hover:text-white" href="#">
-        BR Media Net
-       </a>
+    </section>
+
+    <!-- Book & Room Inclusive Section -->
+    <section
+      class="bg-center bg-cover h-[434px]"
+      style="background-image: url('/public/assets/Rectangle\ 98.png')"
+    >
+      <div class="container mx-auto">
+        <!-- Background Image -->
+
+        <!-- Overlay Section -->
+        <div class="py-28">
+          <div
+            class="bg-[#A9774E] bg-opacity-50 flex flex-col items-center justify-between md:flex-row md:py-16 px-4 py-8 w-full"
+          >
+            <!-- Text Content -->
+            <div
+              class="text-white text-center md:text-left max-w-md mb-4 md:mb-0"
+            >
+              <p class="text-sm md:text-base">Book &amp; Room Inclusive</p>
+              <h1 class="text-2xl md:text-4xl font-bold">Avail Free</h1>
+              <p class="text-base md:text-lg">
+                Continental breakfast worth Rs. 200/-
+              </p>
+            </div>
+            <!-- Button -->
+            <div class="mt-4 md:mt-0">
+              <a
+                class="bg-[#A9774E] text-black px-4 py-2 text-sm font-semibold flex items-center justify-center hover:bg-yellow-600 transition duration-300"
+                href="#"
+              >
+                Learn More
+                <img src="/public/assets/Frame 3.svg" class="ml-2" />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-     </footer>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="py-16 bg-[#282828]">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex flex-col items-start justify-between md:flex-row mt-4">
+          <div class="mb-8 md:mb-0">
+            <img
+              alt="Hotel Casa Riva logo"
+              class="mb-4"
+              height="100"
+              src="/public/assets/image 1.png"
+              width="100"
+            />
+            <p class="text-gray-400 mb-4 lg:w-[320px]">
+              Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga
+              illo laudantium magni sed.
+            </p>
+            <div class="flex space-x-4">
+              <a class="text-gray-400 hover:text-white" href="#">
+                <i class="fab fa-facebook-f"> </i>
+              </a>
+              <a class="text-gray-400 hover:text-white" href="#">
+                <i class="fab fa-twitter"> </i>
+              </a>
+              <a class="text-gray-400 hover:text-white" href="#">
+                <i class="fab fa-google"> </i>
+              </a>
+            </div>
+          </div>
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-orange-500 mb-4">Explore Us</h3>
+            <ul class="space-y-2">
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> Support </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> FAQ's </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#">
+                  Warranty
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-orange-500 mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> Home </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> Rooms </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#">
+                  Reservation
+                </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> Gallery </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> Videos </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> Contact </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-orange-500 mb-4">Contact Us</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center text-gray-400">
+                <i class="fas fa-phone-alt mr-2"> </i>
+                +91 - 7567 122 266
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="fas fa-envelope mr-2"> </i>
+                hotelcasariva.surat@gmail.com
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="fas fa-map-marker-alt mr-2"> </i>
+                Besides Mulberry Height, Behind Auro University, Village:
+                Bhatpore, Surat
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-gray-700 mt-10 pt-4 text-center text-gray-500 text-sm"
+      >
+        © 2016-23 Copyright. All Rights Reserved. Managed by -
+        <a class="text-gray-400 hover:text-white" href="#"> BR Media Net </a>
+      </div>
+    </footer>
     <!-- Scripts -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-    <script>
-      const swiper = new Swiper(".mySwiper", {
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-
-      var swiper2 = new Swiper('.swiper-container', {
-    slidesPerView: 5, // Number of slides to show at once
-    spaceBetween: 30, // Space between slides
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    
-  });
-
-      const menuToggle = document.getElementById("menuToggle");
-      const mobileMenu = document.getElementById("mobileMenu");
-
-      menuToggle.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-    </script>
+    <script src="/public/js/script.js"></script>
   </body>
 </html>

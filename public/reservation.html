@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Riva Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <style>
+      @layer utilities {
+        .swiper-pagination-bullet-active {
+          background-color: #f59e0b;
+        }
+      }
+      p {
+        font-family: "Poppins", sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      .special-font {
+        font-family: "Playfair Display", serif;
+      }
+    </style>
+  </head>
+  <body class="font-sans antialiased">
+    <!-- Navbar -->
+    <header class="bg-transparent fixed w-full z-50">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <img
+          class="text-2xl font-bold text-white"
+          src="/public/assets/image 1.png"
+        />
+        <button id="menuToggle" class="lg:hidden text-white text-2xl">
+          &#9776;
+        </button>
+        <nav id="navbar" class="hidden lg:flex space-x-6">
+          <a href="index.html" class="text-white hover:text-orange-500">Home</a>
+          <a href="about.html" class="text-white hover:text-orange-500"
+            >About Us</a
+          >
+          <a href="rooms.html" class="text-white hover:text-orange-500"
+            >Rooms</a
+          >
+          <a href="reservation.html" class="text-white hover:text-orange-500"
+            >Reservation</a
+          >
+          <a href="gallery.html" class="text-white hover:text-orange-500"
+            >Gallery</a
+          >
+          <a href="contact.html" class="text-white hover:text-orange-500"
+            >Contact</a
+          >
+        </nav>
+        <button
+          type="button"
+          class="btn lg:block hidden btn-outline-white border-white border-2 px-4 py-2 text-white"
+        >
+          Explore
+        </button>
+      </div>
+      <nav id="mobileMenu" class="lg:hidden hidden bg-gray-900">
+        <a
+          href="index.html"
+          class="block px-4 py-2 text-white hover:bg-orange-500"
+          >Home</a
+        >
+        <a
+          href="about.html"
+          class="block px-4 py-2 text-white hover:bg-orange-500"
+          >About Us</a
+        >
+        <a href="#rooms" class="block px-4 py-2 text-white hover:bg-orange-500"
+          >Rooms</a
+        >
+        <a
+          href="reservation.html"
+          class="block px-4 py-2 text-white hover:bg-orange-500"
+          >Reservation</a
+        >
+        <a
+          href="#gallery"
+          class="block px-4 py-2 text-white hover:bg-orange-500"
+          >Gallery</a
+        >
+        <a
+          href="#contact"
+          class="block px-4 py-2 text-white hover:bg-orange-500"
+          >Contact</a
+        >
+      </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section
+      id="rooms"
+      class="py-20 bg-white bg-cover bg-center lg:h-[550px]"
+      style="background-image: url('/public/assets/about.png')"
+    >
+      <div class="container mx-auto text-center mt-16">
+        <div class="flex flex-col items-center mb-8">
+          <div class="w-[150px] border-t-2 border-white mb-2"></div>
+          <h1 class="text-white lg:text-[70px] font-medium font-Playfair">
+            Reservation
+          </h1>
+          <div class="w-[150px] border-t-2 border-white mt-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation -->
+    <section class="py-16">
+      <div
+        class="bg-no-repeat bg-top container h-auto lg:bg-center lg:bg-cover mx-auto"
+        style="background-image: url('/public/assets/Rectangle 292.png')"
+      >
+        <div class="flex h-full items-center justify-center py-8">
+          <div
+            class="flex flex-col items-center lg:flex- lg:flex-row max-w-5xl w-full"
+          >
+            <div class="bg-white bg-opacity-10">
+              <div class="text-white p-8">
+                <h1 class="lg:text-5xl text-3xl font-bold font-Playfair mb-4">
+                  Book Room
+                </h1>
+                <p class="mb-4 lg:text-lg text-base font-normal text-white">
+                  Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda
+                  fuga illo laudantium magni sed temporibus. At aut placeat ex
+                  autem.
+                </p>
+                <p class="mb-2"></p>
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="/public/assets/email.svg"
+                    class="w-[24px] h-[24px]"
+                    alt=""
+                  />
+                  <span class="lg:text-lg text-sm font-Poppins font-normal"
+                    >email</span
+                  >
+                </div>
+                <p class="lg:text-base text-xs font-normal font-Poppins">
+                  booking@yourwebsite.com
+                </p>
+
+                <p class="mb-2"></p>
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="/public/assets/call.svg"
+                    class="w-[24px] h-[24px]"
+                    alt=""
+                  />
+                  <span class="lg:text-lg text-sm font-Poppins font-normal"
+                    >phone</span
+                  >
+                </div>
+                <p class="lg:text-base text-xs font-normal font-Poppins">
+                  +123 456 7890
+                </p>
+              </div>
+            </div>
+            <div class="bg-white p-8 shadow-lg">
+              <h2
+                class="lg:text-[25px] font-semibold text-lg font-Playfair font-bold mb-4"
+              >
+                Reservation
+              </h2>
+              <form>
+                <div class="mb-4">
+                  <label
+                    class="block lg:text-lg font-Poppins text-black font-normal mb-2"
+                    for="hotel"
+                  >
+                    Select Hotels
+                  </label>
+                  <div class="relative">
+                    <select
+                      class="w-full border border-gray-300 p-2 rounded text-[#9C8B8A] lg:text-base"
+                      id="hotel"
+                    >
+                      <option
+                        value=""
+                        disabled
+                        selected
+                        class="text-[#9C8B8A] lg:text-base"
+                      >
+                        Hotel SuperStar
+                      </option>
+                      <option>Hotel 1</option>
+                      <option>Hotel 2</option>
+                    </select>
+                    <!-- Icon -->
+                    <i
+                      class="fas fa-hotel absolute right-3 top-1/2 transform -translate-y-1/2 text-[#9C8B8A]"
+                    ></i>
+                  </div>
+                </div>
+
+                <div class="flex space-x-4 mb-4">
+                  <div class="w-1/2">
+                    <label
+                      class="block lg:text-lg font-Poppins text-black font-normal mb-2"
+                      for="checkin"
+                    >
+                      Check In Date
+                    </label>
+                    <input
+                      class="w-full border border-gray-300 p-2 rounded text-[#9C8B8A]"
+                      id="checkin"
+                      type="date"
+                    />
+                  </div>
+                  <div class="w-1/2">
+                    <label
+                      class="block lg:text-lg font-Poppins text-black font-normal mb-2"
+                      for="checkout"
+                    >
+                      Check Out Date
+                    </label>
+                    <input
+                      class="w-full border border-gray-300 p-2 rounded text-[#9C8B8A]"
+                      id="checkout"
+                      type="date"
+                    />
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <label
+                    class="block lg:text-lg font-Poppins text-black font-normal mb-2"
+                    for="rooms"
+                  >
+                    No. of Room
+                  </label>
+                  <div class="relative">
+                    <select
+                      class="w-full border border-gray-300 p-2 rounded text-[#9C8B8A]"
+                      id="rooms"
+                    >
+                      <option value="" disabled selected class="text-[#9C8B8A]">
+                        Select
+                      </option>
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                    <!-- Icon -->
+                    <i
+                      class="fas fa-bed absolute right-3 top-1/2 transform -translate-y-1/2 text-[#9C8B8A]"
+                    ></i>
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <label
+                    class="block lg:text-lg font-Poppins text-black font-normal mb-2"
+                    for="room1"
+                  >
+                    Room 1
+                  </label>
+                  <div class="relative">
+                    <select
+                      class="w-full border border-gray-300 p-2 rounded text-[#9C8B8A]"
+                      id="room1"
+                    >
+                      <option value="" disabled selected class="text-[#9C8B8A]">
+                        Select
+                      </option>
+                      <option>1 Adult</option>
+                      <option>1 Child</option>
+                    </select>
+                    <!-- Icon -->
+                    <i
+                      class="fas fa-user absolute right-3 top-1/2 transform -translate-y-1/2 text-[#9C8B8A]"
+                    ></i>
+                  </div>
+                </div>
+
+                <button
+                  class="w-full bg-[#9C8B8A] text-white p-2 rounded flex justify-center bg-[#A9774E]"
+                  type="submit"
+                >
+                  Search Room
+                  <img src="/public/assets/Group 10.svg" alt="" />
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mx-auto flex flex-col md:flex-row items-center">
+        <div class="w-full md:w-1/2 p-4">
+          <img
+            alt="Luxurious hotel room with a large bed, chairs, and a view of the city through large windows"
+            class="w-full lg:w-[736px] lg:h-[665px] h-auto rounded-lg shadow-lg"
+            src="/public/assets/Rectangle 303.png"
+          />
+        </div>
+        <div class="w-full md:w-1/2 p-4">
+          <h1
+            class="lg:text-5xl text-2xl font-Playfair :text-4xl font-bold text-[#A9774E] mb-4"
+          >
+            How Do I Make Reservations
+          </h1>
+          <p
+            class="lg:text-lg font-Poppins text-sm font-normal mb-4 text-[#9C8B8A]"
+          >
+            Looking forward to awesome vacations, pleasant ambiance, nice views
+            rooms, comfortable beds with the best entertainment? Look no
+            further. Simply drop into CASA RIVA HOTEL located at Westgate
+            village in LA.
+          </p>
+          <p
+            class="lg:text-lg font-Poppins text-sm font-normal mb-4 text-[#9C8B8A]"
+          >
+            Each of our rooms and their simple, neat yet design-savvy look and
+            welcoming ambiance meet and comply with our customers' standards. As
+            far as the hotel design is concerned, it meets modern expectations.
+            Here at CASA RIVA, each visitor of the hotel is constantly being
+            catered to and is longing for a genuine welcome with a special smile
+            and a soft touch to make you feel at home.
+          </p>
+          <p class="lg:text-lg font-Poppins text-sm font-normal text-[#9C8B8A]">
+            The ultimate vision of CASA RIVA is to stand out from other world
+            hotels with the most dedicated and strategic approach in the
+            hospitality industry.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16">
+      <div
+        class="bg-no-repeat container h-auto lg:bg-center lg:bg-cover mx-auto"
+        style="background-image: url('/public/assets/Rectangle 304.png')"
+      >
+        <div class="flex h-full items-center justify-center mx-auto py-8">
+          <div
+            class="flex flex-col items-center justify-center lg:flex-row lg:mt-0 mt-10 w-full"
+          >
+            <div
+              class="bg-white bg-opacity-90 p-8 rounded-lg shadow-lg max-w-md"
+            >
+              <h1
+                class="text-lg lg:text-3xl font-bold font-Playfair text-center mb-4 text-[#A9774E]"
+              >
+                Reservations Support
+              </h1>
+              <div class="space-y-4">
+                <div class="flex justify-between gap-2">
+                  <span
+                    class="text-sm lg:text-lg font-normal font-Poppins text-[#0A0807]"
+                  >
+                    Address
+                  </span>
+                  <span
+                    class="text-[#9C8B8A] text-xs lg:text-base font-normal font-Poppins border-b-2 border-[#D4D4D4]"
+                  >
+                    Beside Mulberry Height Behind Auro University Bhagal, Surat,
+                    Gujarat
+                  </span>
+                </div>
+                <div class="flex gap-2 justify-between">
+                  <span
+                    class="text-sm lg:text-lg font-normal font-Poppins text-[#0A0807]"
+                  >
+                    Telephone
+                  </span>
+                  <span
+                    class="text-[#9C8B8A] text-xs lg:text-base font-normal font-Poppins border-b-2 border-[#D4D4D4]"
+                  >
+                    +91 777 888 5895
+                  </span>
+                </div>
+                <div class="flex gap-2 justify-between">
+                  <span
+                    class="text-sm lg:text-lg font-normal font-Poppins text-[#0A0807]"
+                  >
+                    Toll Free
+                  </span>
+                  <span
+                    class="text-[#9C8B8A] text-xs lg:text-base font-normal font-Poppins border-b-2 border-[#D4D4D4]"
+                  >
+                    +91 201 281 8743
+                  </span>
+                </div>
+                <div class="flex justify-between gap-2">
+                  <span
+                    class="text-sm lg:text-lg font-normal font-Poppins text-[#0A0807]"
+                  >
+                    Email
+                  </span>
+                  <span
+                    class="text-[#9C8B8A] text-xs lg:text-base font-normal font-Poppins border-b-2 border-[#D4D4D4]"
+                  >
+                    hotelcosmika_surat@gmail.com
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="bg-gray-900 py-16">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex flex-col items-start justify-between md:flex-row mt-4">
+          <div class="mb-8 md:mb-0">
+            <img
+              alt="Hotel Casa Riva logo"
+              class="mb-4"
+              height="100"
+              src="/public/assets/image 1.png"
+              width="100"
+            />
+            <p class="text-gray-400 mb-4">
+              Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga
+              illo laudantium magni sed.
+            </p>
+            <div class="flex space-x-4">
+              <a class="text-gray-400 hover:text-white" href="#">
+                <i class="fab fa-facebook-f"> </i>
+              </a>
+              <a class="text-gray-400 hover:text-white" href="#">
+                <i class="fab fa-twitter"> </i>
+              </a>
+              <a class="text-gray-400 hover:text-white" href="#">
+                <i class="fab fa-google"> </i>
+              </a>
+            </div>
+          </div>
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-orange-500 mb-4">Explore Us</h3>
+            <ul class="space-y-2">
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> Support </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> FAQ's </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#">
+                  Warranty
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-orange-500 mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> Home </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> Rooms </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#">
+                  Reservation
+                </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> Gallery </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> Videos </a>
+              </li>
+              <li>
+                <a class="text-gray-400 hover:text-white" href="#"> Contact </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-orange-500 mb-4">Contact Us</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center text-gray-400">
+                <i class="fas fa-phone-alt mr-2"> </i>
+                +91 - 7567 122 266
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="fas fa-envelope mr-2"> </i>
+                hotelcasariva.surat@gmail.com
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="fas fa-map-marker-alt mr-2"> </i>
+                Besides Mulberry Height, Behind Auro University, Village:
+                Bhatpore, Surat
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-gray-700 mt-10 pt-4 text-center text-gray-500 text-sm"
+      >
+        © 2016-23 Copyright. All Rights Reserved. Managed by -
+        <a class="text-gray-400 hover:text-white" href="#"> BR Media Net </a>
+      </div>
+    </footer>
+    <!-- Scripts -->
+
+    <script src="/public/js/script.js"></script>
+  </body>
+</html>
