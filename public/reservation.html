@@ -40,8 +40,11 @@
     </style>
   </head>
   <body class="font-sans antialiased">
-    <!-- Navbar -->
-    <header class="bg-transparent fixed w-full z-50">
+    <!-- header -->
+    <header
+      id="header"
+      class="bg-transparent fixed w-full z-50 transition-all duration-600 text-white"
+    >
       <div
         class="container mx-auto px-4 py-3 flex justify-between items-center"
       >
@@ -53,20 +56,28 @@
           &#9776;
         </button>
         <nav id="navbar" class="hidden lg:flex space-x-6">
-          <a href="index.html" class="text-white hover:text-orange-500">Home</a>
-          <a href="about.html" class="text-white hover:text-orange-500"
+          <a href="index.html" class="navLinks text-white hover:text-orange-500"
+            >Home</a
+          >
+          <a href="about.html" class="navLinks text-white hover:text-orange-500"
             >About Us</a
           >
-          <a href="rooms.html" class="text-white hover:text-orange-500"
+          <a href="rooms.html" class="navLinks text-white hover:text-orange-500"
             >Rooms</a
           >
-          <a href="reservation.html" class="text-white hover:text-orange-500"
+          <a
+            href="reservation.html"
+            class="navLinks text-white hover:text-orange-500"
             >Reservation</a
           >
-          <a href="gallery.html" class="text-white hover:text-orange-500"
+          <a
+            href="gallery.html"
+            class="navLinks text-white hover:text-orange-500"
             >Gallery</a
           >
-          <a href="contact.html" class="text-white hover:text-orange-500"
+          <a
+            href="contact.html"
+            class="navLinks text-white hover:text-orange-500"
             >Contact</a
           >
         </nav>
@@ -78,26 +89,22 @@
         </button>
       </div>
       <nav id="mobileMenu" class="lg:hidden hidden bg-gray-900">
-        <a
-          href="index.html"
-          class="block px-4 py-2 text-white hover:bg-orange-500"
+        <a href="#" class="block px-4 py-2 text-white hover:bg-orange-500"
           >Home</a
         >
-        <a
-          href="about.html"
-          class="block px-4 py-2 text-white hover:bg-orange-500"
+        <a href="#about" class="block px-4 py-2 text-white hover:bg-orange-500"
           >About Us</a
         >
         <a href="#rooms" class="block px-4 py-2 text-white hover:bg-orange-500"
           >Rooms</a
         >
         <a
-          href="reservation.html"
+          href="#reservation"
           class="block px-4 py-2 text-white hover:bg-orange-500"
           >Reservation</a
         >
         <a
-          href="#gallery"
+          href="gallery.html"
           class="block px-4 py-2 text-white hover:bg-orange-500"
           >Gallery</a
         >
@@ -108,7 +115,6 @@
         >
       </nav>
     </header>
-
     <!-- Hero section -->
     <section
       id="rooms"
@@ -367,7 +373,7 @@
                 Reservations Support
               </h1>
               <div class="space-y-4">
-                <div class="flex justify-between gap-2">
+                <div class="flex justify-start gap-2">
                   <span
                     class="text-sm lg:text-lg font-normal font-Poppins text-[#0A0807]"
                   >
@@ -380,38 +386,38 @@
                     Gujarat
                   </span>
                 </div>
-                <div class="flex gap-2 justify-between">
+                <div class="flex justify-start gap-2">
                   <span
                     class="text-sm lg:text-lg font-normal font-Poppins text-[#0A0807]"
                   >
                     Telephone
                   </span>
                   <span
-                    class="text-[#9C8B8A] text-xs lg:text-base font-normal font-Poppins border-b-2 border-[#D4D4D4]"
+                    class="border-[#D4D4D4] border-b-2 font-Poppins font-normal lg:text-base text-[#9C8B8A] text-xs w-full"
                   >
                     +91 777 888 5895
                   </span>
                 </div>
-                <div class="flex gap-2 justify-between">
+                <div class="flex gap-2 justify-start">
                   <span
-                    class="text-sm lg:text-lg font-normal font-Poppins text-[#0A0807]"
+                    class="font-Poppins font-normal lg:text-lg text-[#0A0807] text-sm w-1/4"
                   >
                     Toll Free
                   </span>
                   <span
-                    class="text-[#9C8B8A] text-xs lg:text-base font-normal font-Poppins border-b-2 border-[#D4D4D4]"
+                    class="border-[#D4D4D4] border-b-2 font-normal lg:text-base text-[#9C8B8A] text-xs w-full"
                   >
                     +91 201 281 8743
                   </span>
                 </div>
-                <div class="flex justify-between gap-2">
+                <div class="flex justify-start gap-2">
                   <span
                     class="text-sm lg:text-lg font-normal font-Poppins text-[#0A0807]"
                   >
                     Email
                   </span>
                   <span
-                    class="text-[#9C8B8A] text-xs lg:text-base font-normal font-Poppins border-b-2 border-[#D4D4D4]"
+                    class="border-[#D4D4D4] font-Poppins font-normal lg:text-base text-[#9C8B8A] text-xs"
                   >
                     hotelcosmika_surat@gmail.com
                   </span>
@@ -525,6 +531,8 @@
       </div>
     </footer>
     <!-- Scripts -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <script src="/public/js/script.js"></script>
   </body>

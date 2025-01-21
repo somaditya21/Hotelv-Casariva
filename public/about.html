@@ -40,8 +40,11 @@
     </style>
   </head>
   <body class="font-sans antialiased">
-    <!-- Navbar -->
-    <header class="bg-transparent fixed w-full z-50">
+    <!-- header -->
+    <header
+      id="header"
+      class="bg-transparent fixed w-full z-50 transition-all duration-600 text-white"
+    >
       <div
         class="container mx-auto px-4 py-3 flex justify-between items-center"
       >
@@ -53,20 +56,28 @@
           &#9776;
         </button>
         <nav id="navbar" class="hidden lg:flex space-x-6">
-          <a href="index.html" class="text-white hover:text-orange-500">Home</a>
-          <a href="about.html" class="text-white hover:text-orange-500"
+          <a href="index.html" class="navLinks text-white hover:text-orange-500"
+            >Home</a
+          >
+          <a href="about.html" class="navLinks text-white hover:text-orange-500"
             >About Us</a
           >
-          <a href="rooms.html" class="text-white hover:text-orange-500"
+          <a href="rooms.html" class="navLinks text-white hover:text-orange-500"
             >Rooms</a
           >
-          <a href="reservation.html" class="text-white hover:text-orange-500"
+          <a
+            href="reservation.html"
+            class="navLinks text-white hover:text-orange-500"
             >Reservation</a
           >
-          <a href="gallery.html" class="text-white hover:text-orange-500"
+          <a
+            href="gallery.html"
+            class="navLinks text-white hover:text-orange-500"
             >Gallery</a
           >
-          <a href="contact.html" class="text-white hover:text-orange-500"
+          <a
+            href="contact.html"
+            class="navLinks text-white hover:text-orange-500"
             >Contact</a
           >
         </nav>
@@ -78,28 +89,22 @@
         </button>
       </div>
       <nav id="mobileMenu" class="lg:hidden hidden bg-gray-900">
-        <a
-          href="index.html"
-          class="block px-4 py-2 text-white hover:bg-orange-500"
+        <a href="#" class="block px-4 py-2 text-white hover:bg-orange-500"
           >Home</a
         >
-        <a
-          href="about.html"
-          class="block px-4 py-2 text-white hover:bg-orange-500"
+        <a href="#about" class="block px-4 py-2 text-white hover:bg-orange-500"
           >About Us</a
         >
-        <a
-          href="rooms.html"
-          class="block px-4 py-2 text-white hover:bg-orange-500"
+        <a href="#rooms" class="block px-4 py-2 text-white hover:bg-orange-500"
           >Rooms</a
         >
         <a
-          href="reservation.html"
+          href="#reservation"
           class="block px-4 py-2 text-white hover:bg-orange-500"
           >Reservation</a
         >
         <a
-          href="#gallery"
+          href="gallery.html"
           class="block px-4 py-2 text-white hover:bg-orange-500"
           >Gallery</a
         >
@@ -110,7 +115,7 @@
         >
       </nav>
     </header>
-<!-- Hero Section -->
+    <!-- Hero Section -->
     <section
       id="about"
       class="py-20 bg-white bg-cover bg-center lg:h-[550px]"

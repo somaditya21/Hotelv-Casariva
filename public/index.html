@@ -39,9 +39,20 @@
       }
     </style>
   </head>
+
+  <style>
+    .swiper-button-next {
+      position: absolute;
+      left: 50%;
+      width: 30px;
+    }
+  </style>
   <body class="font-sans antialiased">
-    <!-- Navbar -->
-    <header class="bg-transparent fixed w-full z-50">
+    <!-- header -->
+    <header
+      id="header"
+      class="bg-transparent fixed w-full z-50 transition-all duration-600 text-white"
+    >
       <div
         class="container mx-auto px-4 py-3 flex justify-between items-center"
       >
@@ -53,20 +64,28 @@
           &#9776;
         </button>
         <nav id="navbar" class="hidden lg:flex space-x-6">
-          <a href="#" class="text-white hover:text-orange-500">Home</a>
-          <a href="about.html" class="text-white hover:text-orange-500"
+          <a href="index.html" class="navLinks text-white hover:text-orange-500"
+            >Home</a
+          >
+          <a href="about.html" class="navLinks text-white hover:text-orange-500"
             >About Us</a
           >
-          <a href="rooms.html" class="text-white hover:text-orange-500"
+          <a href="rooms.html" class="navLinks text-white hover:text-orange-500"
             >Rooms</a
           >
-          <a href="reservation.html" class="text-white hover:text-orange-500"
+          <a
+            href="reservation.html"
+            class="navLinks text-white hover:text-orange-500"
             >Reservation</a
           >
-          <a href="gallery.html" class="text-white hover:text-orange-500"
+          <a
+            href="gallery.html"
+            class="navLinks text-white hover:text-orange-500"
             >Gallery</a
           >
-          <a href="contact.html" class="text-white hover:text-orange-500"
+          <a
+            href="contact.html"
+            class="navLinks text-white hover:text-orange-500"
             >Contact</a
           >
         </nav>
@@ -81,14 +100,18 @@
         <a href="#" class="block px-4 py-2 text-white hover:bg-orange-500"
           >Home</a
         >
-        <a href="#about" class="block px-4 py-2 text-white hover:bg-orange-500"
+        <a
+          href="about.html"
+          class="block px-4 py-2 text-white hover:bg-orange-500"
           >About Us</a
         >
-        <a href="#rooms" class="block px-4 py-2 text-white hover:bg-orange-500"
+        <a
+          href="rooms.html"
+          class="block px-4 py-2 text-white hover:bg-orange-500"
           >Rooms</a
         >
         <a
-          href="#reservation"
+          href="reservation.html"
           class="block px-4 py-2 text-white hover:bg-orange-500"
           >Reservation</a
         >
@@ -98,7 +121,7 @@
           >Gallery</a
         >
         <a
-          href="#contact"
+          href="contact.html"
           class="block px-4 py-2 text-white hover:bg-orange-500"
           >Contact</a
         >
@@ -107,14 +130,16 @@
 
     <!-- Hero Section -->
     <section
-      class="relative lg:h-[1000px] h-[404px] bg-cover bg-center"
+      class="relative lg:h-[600px] h-[404px] bg-cover bg-center"
       style="background-image: url('../public/assets/home-bg.png')"
     >
       <div class="absolute inset-0 bg-black opacity-0"></div>
       <div
         class="relative z-10 h-full flex flex-col justify-center items-center text-center text-white"
       >
-        <h1 class="text-2xl lg:text-7xl font-bold mb-4 w-[500px] lg:w-[550px]">
+        <h1
+          class="text-[24px] w-full lg:text-7xl font-bold mb-4 w-[400px] lg:w-[550px]"
+        >
           Welcome To Casa Riva Hotel
         </h1>
         <p class="text-sm lg:text-xl mb-8 max-w-2xl font-Poppins">
@@ -125,78 +150,70 @@
         <p class="mt-4">Scroll To View</p>
       </div>
     </section>
-    <!-- About Section  -->
-    <section class="relative max-w-7xl mx-auto py-16 px-6">
-      <!-- Background Text -->
-      <h1
-        class="absolute text-[150px] font-bold text-[#9C8B8A] opacity-20 top-60 right-0"
-      >
-        About Us
-      </h1>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <!-- Left Content -->
-        <div class="space-y-6">
-          <div>
+    <!-- About Section  -->
+    <section class="py-16">
+      <div
+        class="bg-no-repeat bg-right bg-top container mx-auto opacity-90 px-6 w-full"
+        style="background-image: url('/public/assets/About\ US.png')"
+      >
+        <div class="grid md:grid-cols-3 gap-6 items-center">
+          <!-- Left Section (Image & Quote) -->
+          <div class="space-y-4">
             <img
               src="/public/assets/Rectangle 4.png"
-              alt="Luxurious Bedroom"
+              alt="Luxurious Bed"
               class="rounded-lg shadow-lg"
             />
+            <blockquote
+              class="text-[#9C8B8A] font-Playfair space-y-4 lg:text-3xl"
+            >
+              <p>
+                We at CASA RIVA know what it means to come from a long and
+                tiring trip and to long for a genuine welcome,
+              </p>
+              <footer class="text-gray-900 font-semibold">
+                - Lincoln Bator,
+                <span class="text-[#9C8B8A]">Founder &amp; CEO</span>
+              </footer>
+            </blockquote>
           </div>
-          <blockquote
-            class="text-[#9C8B8A] font-Playfair space-y-4 lg:text-3xl"
-          >
-            <p>
-              We at CASA RIVA know what it means to come from a long and tiring
-              trip and to long for a genuine welcome,
-            </p>
-            <footer class="text-gray-900 font-semibold">
-              - Lincoln Bator,
-              <span class="text-[#9C8B8A]">Founder &amp; CEO</span>
-            </footer>
-          </blockquote>
-        </div>
 
-        <!-- Right Content -->
-        <div>
-          <!-- Second Image -->
-          <div class="relative">
+          <!-- Center Section (Text & Icon) -->
+          <div class="b bg-right p-6 relative">
             <img
               src="/public/assets/Rectangle 5.png"
-              alt="Luxurious Living Room"
-              class="lg:w-[330px] rounded-lg shadow-lg"
+              alt="Hotel Room"
+              class="mb-4 rounded-lg"
             />
             <div
-              class="absolute bg-white top-4 right-48 rounded-full shadow-lg"
+              class="absolute top-2 right-2 text-white text-xs font-bold px-3 py-1 rounded-full"
             >
-              <img
-                src="/public/assets/Group 13.png"
-                alt=""
-                class="lg:w-[90px] lg:h-[90px]"
-              />
+              <img src="/public/assets/Group 13.png" alt="" class="" />
             </div>
-          </div>
-
-          <!-- About Us Content -->
-          <div class="mt-16">
-            <p class="text-[#9C8B8A]">About Us</p>
+            <h4 class="text-[#9C8B8A]">About Us</h4>
             <h2 class="text-4xl font-bold text-gray-900 mb-4">
               The World's Luxurious Hotel
             </h2>
             <p class="text-gray-700 mb-6">
-              We at CASA RIVA know what it means to come from a long and tiring
-              trip and to long for a genuine welcome, a good drink and a
-              comfortable bed to stretch out on.
+              We at CASA RVA know what it means to come from a long and tiring
+              trip and to long for a genuine welcome, a good drink, and a
+              comfortable bed to stretch in.
             </p>
             <ul class="space-y-2 text-gray-700">
               <li class="flex items-center">
-                <span class="text-orange-500 mr-2">✓</span> To create memorable
-                experiences for our guests.
+                <span
+                  class="lg:text-[#A9774E] text-white lg:text-xl text-lg font-Playfair mr-2"
+                  >✓</span
+                >
+                To create memorable experiences for our guests.
               </li>
               <li class="flex items-center">
-                <span class="text-orange-500 mr-2">✓</span> To create memorable
-                experiences for our community.
+                <span
+                  class="lg:text-[#A9774E] text-white lg:text-xl text-lg font-Playfair mr-2"
+                  >✓</span
+                >
+                To create memorable experiences for our community.
               </li>
             </ul>
             <div class="mt-6">
@@ -209,11 +226,11 @@
             </div>
           </div>
 
-          <!-- Third Image -->
-          <div class="mt-6">
+          <!-- Right Section (Image) -->
+          <div style="margin-top: auto">
             <img
               src="/public/assets/Rectangle 5.png"
-              alt="Luxurious Suite"
+              alt="Luxury Room"
               class="rounded-lg shadow-lg"
             />
           </div>
@@ -222,7 +239,7 @@
     </section>
 
     <!-- Room Information Master Section -->
-    <section class="py-16 bg-gray-50">
+    <section class="bg-gray-50 overflow-hidden py-16 relative">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <p class="text-orange-500">
@@ -230,52 +247,27 @@
           </p>
           <h2 class="text-3xl font-bold">Room Information Master</h2>
         </div>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide flex gap-4 justify-between">
-              <div class="part-1 relative">
-                <img
-                  src="/public/assets/Rectangle 8.png"
-                  alt="Feature 1"
-                  class="rounded mb-4 lg:w-[460px] lg:h-[584px]"
-                />
-                <div class="absolute top-4 right-4">
-                  <img src="/public/assets/Frame 9.png" alt="" />
-                </div>
-                <div class="absolute bottom-[40px] left-4">
-                  <p class="lg:text-lg font-bold text-white flex items-center">
-                    <img
-                      src="/public/assets/Group 14.png"
-                      alt=""
-                      class="h-auto"
-                    />
-                    4816.0 / Night
-                  </p>
-                  <h3 class="text-white lg:text-[25px]">Standard Room</h3>
-                </div>
-              </div>
-              <div class="part-2 relative">
-                <img
-                  src="/public/assets/Rectangle 8.png"
-                  alt="Feature 1"
-                  class="rounded mb-4 lg:w-[460px] lg:h-[584px]"
-                />
-                <div class="absolute top-4 right-4">
-                  <img src="/public/assets/Frame 9.png" alt="" />
-                </div>
-                <div class="absolute bottom-[40px] left-4">
-                  <p class="lg:text-lg font-bold text-white flex items-center">
-                    <img
-                      src="/public/assets/Group 14.png"
-                      alt=""
-                      class="h-auto"
-                    />
-                    4816.0 / Night
-                  </p>
-                  <h3 class="text-white lg:text-[25px]">Standard Room</h3>
-                </div>
-              </div>
-              <div class="part-3 relative">
+
+        <div
+          class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events"
+        >
+          <div
+            class="swiper-wrapper py-8"
+            id="swiper-wrapper-7cf589a53ab15da8"
+            aria-live="polite"
+            style="
+              transition-duration: 0ms;
+              transform: translate3d(-1664px, 0px, 0px);
+            "
+          >
+            <div
+              class="swiper-slide swiper-slide-duplicate"
+              data-swiper-slide-index="4"
+              role="group"
+              aria-label="5 / 7"
+              style="width: 416px"
+            >
+              <div class="part-1 relative mx-4">
                 <img
                   src="/public/assets/Rectangle 8.png"
                   alt="Feature 1"
@@ -297,50 +289,14 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide flex gap-4 justify-between">
-              <div class="part-1 relative">
-                <img
-                  src="/public/assets/Rectangle 8.png"
-                  alt="Feature 1"
-                  class="rounded mb-4 lg:w-[460px] lg:h-[584px]"
-                />
-                <div class="absolute top-4 right-4">
-                  <img src="/public/assets/Frame 9.png" alt="" />
-                </div>
-                <div class="absolute bottom-[40px] left-4">
-                  <p class="lg:text-lg font-bold text-white flex items-center">
-                    <img
-                      src="/public/assets/Group 14.png"
-                      alt=""
-                      class="h-auto"
-                    />
-                    4816.0 / Night
-                  </p>
-                  <h3 class="text-white lg:text-[25px]">Standard Room</h3>
-                </div>
-              </div>
-              <div class="part-2 relative">
-                <img
-                  src="/public/assets/Rectangle 8.png"
-                  alt="Feature 1"
-                  class="rounded mb-4 lg:w-[460px] lg:h-[584px]"
-                />
-                <div class="absolute top-4 right-4">
-                  <img src="/public/assets/Frame 9.png" alt="" />
-                </div>
-                <div class="absolute bottom-[40px] left-4">
-                  <p class="lg:text-lg font-bold text-white flex items-center">
-                    <img
-                      src="/public/assets/Group 14.png"
-                      alt=""
-                      class="h-auto"
-                    />
-                    4816.0 / Night
-                  </p>
-                  <h3 class="text-white lg:text-[25px]">Standard Room</h3>
-                </div>
-              </div>
-              <div class="part-3 relative">
+            <div
+              class="swiper-slide swiper-slide-duplicate"
+              data-swiper-slide-index="5"
+              role="group"
+              aria-label="6 / 7"
+              style="width: 416px"
+            >
+              <div class="part-1 relative mx-4">
                 <img
                   src="/public/assets/Rectangle 8.png"
                   alt="Feature 1"
@@ -362,8 +318,14 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide p-6 flex gap-4 justify-between">
-              <div class="part-1 relative">
+            <div
+              class="swiper-slide swiper-slide-duplicate"
+              data-swiper-slide-index="6"
+              role="group"
+              aria-label="7 / 7"
+              style="width: 416px"
+            >
+              <div class="part-1 relative mx-4">
                 <img
                   src="/public/assets/Rectangle 8.png"
                   alt="Feature 1"
@@ -384,7 +346,15 @@
                   <h3 class="text-white lg:text-[25px]">Standard Room</h3>
                 </div>
               </div>
-              <div class="part-2 relative">
+            </div>
+            <div
+              class="swiper-slide swiper-slide-prev"
+              data-swiper-slide-index="0"
+              role="group"
+              aria-label="1 / 7"
+              style="width: 416px"
+            >
+              <div class="part-1 relative mx-4">
                 <img
                   src="/public/assets/Rectangle 8.png"
                   alt="Feature 1"
@@ -405,7 +375,247 @@
                   <h3 class="text-white lg:text-[25px]">Standard Room</h3>
                 </div>
               </div>
-              <div class="part-3 relative">
+            </div>
+            <div
+              class="swiper-slide swiper-slide-active"
+              data-swiper-slide-index="1"
+              role="group"
+              aria-label="2 / 7"
+              style="width: 416px"
+            >
+              <div class="part-1 relative mx-4">
+                <img
+                  src="/public/assets/Rectangle 8.png"
+                  alt="Feature 1"
+                  class="rounded mb-4 lg:w-[460px] lg:h-[584px]"
+                />
+                <div class="absolute top-4 right-4">
+                  <img src="/public/assets/Frame 9.png" alt="" />
+                </div>
+                <div class="absolute bottom-[40px] left-4">
+                  <p class="lg:text-lg font-bold text-white flex items-center">
+                    <img
+                      src="/public/assets/Group 14.png"
+                      alt=""
+                      class="h-auto"
+                    />
+                    4816.0 / Night
+                  </p>
+                  <h3 class="text-white lg:text-[25px]">Standard Room</h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-next"
+              data-swiper-slide-index="2"
+              role="group"
+              aria-label="3 / 7"
+              style="width: 416px"
+            >
+              <div class="part-1 relative mx-4">
+                <img
+                  src="/public/assets/Rectangle 8.png"
+                  alt="Feature 1"
+                  class="rounded mb-4 lg:w-[460px] lg:h-[584px]"
+                />
+                <div class="absolute top-4 right-4">
+                  <img src="/public/assets/Frame 9.png" alt="" />
+                </div>
+                <div class="absolute bottom-[40px] left-4">
+                  <p class="lg:text-lg font-bold text-white flex items-center">
+                    <img
+                      src="/public/assets/Group 14.png"
+                      alt=""
+                      class="h-auto"
+                    />
+                    4816.0 / Night
+                  </p>
+                  <h3 class="text-white lg:text-[25px]">Standard Room</h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              data-swiper-slide-index="3"
+              role="group"
+              aria-label="4 / 7"
+              style="width: 416px"
+            >
+              <div class="part-1 relative mx-4">
+                <img
+                  src="/public/assets/Rectangle 8.png"
+                  alt="Feature 1"
+                  class="rounded mb-4 lg:w-[460px] lg:h-[584px]"
+                />
+                <div class="absolute top-4 right-4">
+                  <img src="/public/assets/Frame 9.png" alt="" />
+                </div>
+                <div class="absolute bottom-[40px] left-4">
+                  <p class="lg:text-lg font-bold text-white flex items-center">
+                    <img
+                      src="/public/assets/Group 14.png"
+                      alt=""
+                      class="h-auto"
+                    />
+                    4816.0 / Night
+                  </p>
+                  <h3 class="text-white lg:text-[25px]">Standard Room</h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              data-swiper-slide-index="4"
+              role="group"
+              aria-label="5 / 7"
+              style="width: 416px"
+            >
+              <div class="part-1 relative mx-4">
+                <img
+                  src="/public/assets/Rectangle 8.png"
+                  alt="Feature 1"
+                  class="rounded mb-4 lg:w-[460px] lg:h-[584px]"
+                />
+                <div class="absolute top-4 right-4">
+                  <img src="/public/assets/Frame 9.png" alt="" />
+                </div>
+                <div class="absolute bottom-[40px] left-4">
+                  <p class="lg:text-lg font-bold text-white flex items-center">
+                    <img
+                      src="/public/assets/Group 14.png"
+                      alt=""
+                      class="h-auto"
+                    />
+                    4816.0 / Night
+                  </p>
+                  <h3 class="text-white lg:text-[25px]">Standard Room</h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              data-swiper-slide-index="5"
+              role="group"
+              aria-label="6 / 7"
+              style="width: 416px"
+            >
+              <div class="part-1 relative mx-4">
+                <img
+                  src="/public/assets/Rectangle 8.png"
+                  alt="Feature 1"
+                  class="rounded mb-4 lg:w-[460px] lg:h-[584px]"
+                />
+                <div class="absolute top-4 right-4">
+                  <img src="/public/assets/Frame 9.png" alt="" />
+                </div>
+                <div class="absolute bottom-[40px] left-4">
+                  <p class="lg:text-lg font-bold text-white flex items-center">
+                    <img
+                      src="/public/assets/Group 14.png"
+                      alt=""
+                      class="h-auto"
+                    />
+                    4816.0 / Night
+                  </p>
+                  <h3 class="text-white lg:text-[25px]">Standard Room</h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              data-swiper-slide-index="6"
+              role="group"
+              aria-label="7 / 7"
+              style="width: 416px"
+            >
+              <div class="part-1 relative mx-4">
+                <img
+                  src="/public/assets/Rectangle 8.png"
+                  alt="Feature 1"
+                  class="rounded mb-4 lg:w-[460px] lg:h-[584px]"
+                />
+                <div class="absolute top-4 right-4">
+                  <img src="/public/assets/Frame 9.png" alt="" />
+                </div>
+                <div class="absolute bottom-[40px] left-4">
+                  <p class="lg:text-lg font-bold text-white flex items-center">
+                    <img
+                      src="/public/assets/Group 14.png"
+                      alt=""
+                      class="h-auto"
+                    />
+                    4816.0 / Night
+                  </p>
+                  <h3 class="text-white lg:text-[25px]">Standard Room</h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+              data-swiper-slide-index="0"
+              role="group"
+              aria-label="1 / 7"
+              style="width: 416px"
+            >
+              <div class="part-1 relative mx-4">
+                <img
+                  src="/public/assets/Rectangle 8.png"
+                  alt="Feature 1"
+                  class="rounded mb-4 lg:w-[460px] lg:h-[584px]"
+                />
+                <div class="absolute top-4 right-4">
+                  <img src="/public/assets/Frame 9.png" alt="" />
+                </div>
+                <div class="absolute bottom-[40px] left-4">
+                  <p class="lg:text-lg font-bold text-white flex items-center">
+                    <img
+                      src="/public/assets/Group 14.png"
+                      alt=""
+                      class="h-auto"
+                    />
+                    4816.0 / Night
+                  </p>
+                  <h3 class="text-white lg:text-[25px]">Standard Room</h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+              data-swiper-slide-index="1"
+              role="group"
+              aria-label="2 / 7"
+              style="width: 416px"
+            >
+              <div class="part-1 relative mx-4">
+                <img
+                  src="/public/assets/Rectangle 8.png"
+                  alt="Feature 1"
+                  class="rounded mb-4 lg:w-[460px] lg:h-[584px]"
+                />
+                <div class="absolute top-4 right-4">
+                  <img src="/public/assets/Frame 9.png" alt="" />
+                </div>
+                <div class="absolute bottom-[40px] left-4">
+                  <p class="lg:text-lg font-bold text-white flex items-center">
+                    <img
+                      src="/public/assets/Group 14.png"
+                      alt=""
+                      class="h-auto"
+                    />
+                    4816.0 / Night
+                  </p>
+                  <h3 class="text-white lg:text-[25px]">Standard Room</h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+              data-swiper-slide-index="2"
+              role="group"
+              aria-label="3 / 7"
+              style="width: 416px"
+            >
+              <div class="part-1 relative mx-4">
                 <img
                   src="/public/assets/Rectangle 8.png"
                   alt="Feature 1"
@@ -428,14 +638,83 @@
               </div>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
+          <div
+            class="swiper-pagination mt-16 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+          >
+            <span
+              class="swiper-pagination-bullet"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 1"
+            ></span
+            ><span
+              class="swiper-pagination-bullet swiper-pagination-bullet-active"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 2"
+              aria-current="true"
+            ></span
+            ><span
+              class="swiper-pagination-bullet"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 3"
+            ></span
+            ><span
+              class="swiper-pagination-bullet"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 4"
+            ></span
+            ><span
+              class="swiper-pagination-bullet"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 5"
+            ></span
+            ><span
+              class="swiper-pagination-bullet"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 6"
+            ></span
+            ><span
+              class="swiper-pagination-bullet"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 7"
+            ></span>
+          </div>
         </div>
-        <div class="text-center mt-8">
-          <button class="bg-[#d4a373] text-white px-6 py-2">
-            View All Rooms
-            <i class="fas fa-arrow-right ml-2"> </i>
-          </button>
+        <!-- <div
+          class="absolute ml-auto right-0 swiper-button-next"
+          tabindex="0"
+          role="button"
+          aria-label="Next slide"
+          aria-controls="swiper-wrapper-b7dd9510c0656b632"
+          aria-disabled="false"
+        >
+         1
         </div>
+        <div
+          class="swiper-button-prev"
+          tabindex="0"
+          role="button"
+          aria-label="Previous slide"
+          aria-controls="swiper-wrapper-b7dd9510c0656b632"
+          aria-disabled="flase"
+        >
+          2
+        </div> -->
+      </div>
+
+      <div class="mt-8 text-center">
+        <button
+          class="bg-[#d4a373] flex mx-auto px-6 py-2 text-center text-white"
+        >
+          <a href="rooms.html flex"> View All Rooms </a>
+          <img src="/public/assets/arrow-right.svg" class="ml-2" />
+        </button>
       </div>
     </section>
 
@@ -538,35 +817,45 @@
 
         <!-- Show/Hide Button (Only on mobile) -->
         <div class="text-center mt-8">
-          <button id="showMoreBtn" class="bg-[#d4a373] text-white px-6 py-2">
-            View All Rooms
-            <i class="fas fa-arrow-down ml-2"> </i>
+          <button
+            id="showMoreBtn"
+            class="bg-[#d4a373] flex mx-auto px-6 py-2 text-center text-white"
+          >
+            <a href="">View All Rooms</a>
+            <img src="/public/assets/arrow-right.svg" class="ml-2" />
           </button>
         </div>
       </div>
     </section>
 
     <!-- Gallery Section  -->
-    <section class="py-16">
-      <div class="container mx-auto px-4">
+    <section class="py-16 relative">
+      <div class="px-4">
         <div class="text-center mb-12">
           <p class="text-orange-500">Our Popular Images</p>
           <h2 class="text-3xl font-bold">Gallery</h2>
         </div>
-        <div class="flex justify-between items-center mb-4">
-          <!-- <div class="flex space-x-4">
-            <button
-              class="swiper-button-prev p-2 border border-gray-300 rounded"
-            >
-              ←
-            </button>
-            <button
-              class="swiper-button-next p-2 border border-gray-300 rounded"
-            >
-              →
-            </button>
-          </div> -->
-        </div>
+
+        <!-- <div class="swiper-wrapper">
+          <div
+            class="absolute right-0 swiper-button swiper-button-next"
+            tabindex="0"
+            role="button"
+            aria-label="Next slide"
+            aria-controls="swiper-wrapper-fe2a9f735b31a691"
+            aria-disabled="false"
+            style="right: 10%; top: -50px"
+          ></div>
+          <div
+            class="absolute swiper-button swiper-button-disabled swiper-button-prev"
+            tabindex="-1"
+            role="button"
+            aria-label="Previous slide"
+            aria-controls="swiper-wrapper-fe2a9f735b31a691"
+            aria-disabled="true"
+            style="left: 85%; top: -49px"
+          ></div>
+        </div> -->
         <div class="swiper-container overflow-hidden">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -682,7 +971,7 @@
               <div class="flex items-center">
                 <img
                   src="/public/assets/Vector.svg"
-                  class="fas fa-quote-right text-orange-500 text-2xl"
+                  class="fas fa-quote-right lg:text-[#A9774E] text-white lg:text-xl text-lg font-Playfair text-2xl"
                 />
               </div>
             </div>
@@ -723,7 +1012,7 @@
               <div class="flex items-center">
                 <img
                   src="/public/assets/Vector.svg"
-                  class="fas fa-quote-right text-orange-500 text-2xl"
+                  class="fas fa-quote-right lg:text-[#A9774E] text-white lg:text-xl text-lg font-Playfair text-2xl"
                 />
               </div>
             </div>
@@ -733,7 +1022,10 @@
               consequatur consequuntur dolorem enim.
             </p>
             <div class="flex items-center">
-              <i class="fas fa-quote-right text-orange-500 text-2xl"> </i>
+              <i
+                class="fas fa-quote-right lg:text-[#A9774E] text-white lg:text-xl text-lg font-Playfair text-2xl"
+              >
+              </i>
             </div>
             <div class="flex mt-4">
               <img src="/public/assets/Frame.svg" class="text-orange-500" />
@@ -906,7 +1198,7 @@
         />
         <img
           alt="Thumbnail of a living room with a view"
-          class="w-48 h-32 object-cover"
+          class="w-48 h-32 object-cover lg:block hidden"
           height="150"
           src="/public/assets/video4.png"
           width="200"
@@ -930,7 +1222,7 @@
       >
         <div class="flex h-full items-center justify-center py-8">
           <div
-            class="flex flex-col items-center lg:flex- lg:flex-row max-w-5xl w-full"
+            class="flex flex-col items-center lg:flex- lg:flex-row max-w-6xl w-full"
           >
             <div class="bg-white bg-opacity-10">
               <div class="text-white p-8">
@@ -973,7 +1265,7 @@
                 </p>
               </div>
             </div>
-            <div class="bg-white p-8 shadow-lg">
+            <div class="bg-white p-8 shadow-lg max-w-2xl w-full">
               <h2
                 class="lg:text-[25px] font-semibold text-lg font-Playfair font-bold mb-4"
               >
@@ -994,8 +1286,8 @@
                     >
                       <option
                         value=""
-                        disabled
-                        selected
+                        disabled=""
+                        selected=""
                         class="text-[#9C8B8A] lg:text-base"
                       >
                         Hotel SuperStar
@@ -1051,7 +1343,12 @@
                       class="w-full border border-gray-300 p-2 rounded text-[#9C8B8A]"
                       id="rooms"
                     >
-                      <option value="" disabled selected class="text-[#9C8B8A]">
+                      <option
+                        value=""
+                        disabled=""
+                        selected=""
+                        class="text-[#9C8B8A]"
+                      >
                         Select
                       </option>
                       <option>1</option>
@@ -1076,7 +1373,12 @@
                       class="w-full border border-gray-300 p-2 rounded text-[#9C8B8A]"
                       id="room1"
                     >
-                      <option value="" disabled selected class="text-[#9C8B8A]">
+                      <option
+                        value=""
+                        disabled=""
+                        selected=""
+                        class="text-[#9C8B8A]"
+                      >
                         Select
                       </option>
                       <option>1 Adult</option>
@@ -1105,7 +1407,7 @@
 
     <!-- Book & Room Inclusive Section -->
     <section
-      class="bg-center bg-cover h-[434px]"
+      class="bg-center bg-cover h-[434px] py-16"
       style="background-image: url('/public/assets/Rectangle\ 98.png')"
     >
       <div class="container mx-auto">
@@ -1141,99 +1443,157 @@
       </div>
     </section>
 
+    <!-- Let's Talk Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto">
+        <div
+          class="bg-[#F7F2EE] flex flex-col-reverse items-center lg:flex-row max-w-8xl w-full shadow-lg"
+        >
+          <div class="p-6 md:w-1/2">
+            <h2 class="text-2xl font-bold mb-4">Let's Talk</h2>
+            <p class="text-gray-600 mb-6">
+              Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga
+              illo laudantium magni sed temporibus. Amet atque aut autem
+              consectetur consequuntur dolorem enim.
+            </p>
+            <button
+              class="bg-brown-500 text-white px-6 py-2 rounded-full flex items-center"
+            >
+              Get In Touch
+              <i class="fas fa-arrow-right ml-2"> </i>
+            </button>
+          </div>
+          <div class="md:w-1/2">
+            <img
+              alt="A person talking to a receptionist at a hotel reception desk"
+              class="w-full h-full object-cover"
+              height="400"
+              src="/public/assets/Rectangle 19422.png"
+              width="600"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer  -->
     <footer class="py-16 bg-[#282828]">
       <div class="container mx-auto px-4 py-4">
-        <div class="flex flex-col items-start justify-between md:flex-row mt-4">
-          <div class="mb-8 md:mb-0">
-            <img
-              alt="Hotel Casa Riva logo"
-              class="mb-4"
-              height="100"
-              src="/public/assets/image 1.png"
-              width="100"
-            />
-            <p class="text-gray-400 mb-4 lg:w-[320px]">
-              Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga
-              illo laudantium magni sed.
-            </p>
-            <div class="flex space-x-4">
-              <a class="text-gray-400 hover:text-white" href="#">
-                <i class="fab fa-facebook-f"> </i>
-              </a>
-              <a class="text-gray-400 hover:text-white" href="#">
-                <i class="fab fa-twitter"> </i>
-              </a>
-              <a class="text-gray-400 hover:text-white" href="#">
-                <i class="fab fa-google"> </i>
-              </a>
+        <div class="flex justify-between lg:flex-row flex-col">
+          <div class="left flex gap-16">
+            <div class="mb-8 md:mb-0">
+              <img
+                alt="Hotel Casa Riva logo"
+                class="mb-4"
+                height="100"
+                src="/public/assets/image 1.png"
+                width="100"
+              />
+              <p class="text-gray-400 mb-4 lg:w-[320px]">
+                Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga
+                illo laudantium magni sed.
+              </p>
+              <div class="flex space-x-4">
+                <a class="text-gray-400 hover:text-white" href="#">
+                  <img src="/public/assets/fb.svg" alt="" />
+                </a>
+                <a class="text-gray-400 hover:text-white" href="#">
+                  <img src="/public/assets/twitter.svg" alt="" />
+                </a>
+                <a class="text-gray-400 hover:text-white" href="#">
+                  <img src="/public/assets/google.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="mb-8 md:mb-0">
+              <h3
+                class="lg:text-[#A9774E] text-white lg:text-xl text-lg font-Playfair mb-4 break-all"
+              >
+                Explore Us
+              </h3>
+              <ul class="space-y-2">
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="#">
+                    Support
+                  </a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="#"> FAQ's </a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="#">
+                    Warranty
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="mb-8 md:mb-0">
-            <h3 class="text-orange-500 mb-4">Explore Us</h3>
-            <ul class="space-y-2">
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#"> Support </a>
-              </li>
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#"> FAQ's </a>
-              </li>
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#">
-                  Warranty
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="mb-8 md:mb-0">
-            <h3 class="text-orange-500 mb-4">Quick Links</h3>
-            <ul class="space-y-2">
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#"> Home </a>
-              </li>
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#"> Rooms </a>
-              </li>
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#">
-                  Reservation
-                </a>
-              </li>
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#"> Gallery </a>
-              </li>
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#"> Videos </a>
-              </li>
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#"> Contact </a>
-              </li>
-            </ul>
-          </div>
-          <div class="mb-8 md:mb-0">
-            <h3 class="text-orange-500 mb-4">Contact Us</h3>
-            <ul class="space-y-2">
-              <li class="flex items-center text-gray-400">
-                <i class="fas fa-phone-alt mr-2"> </i>
-                +91 - 7567 122 266
-              </li>
-              <li class="flex items-center text-gray-400">
-                <i class="fas fa-envelope mr-2"> </i>
-                hotelcasariva.surat@gmail.com
-              </li>
-              <li class="flex items-center text-gray-400">
-                <i class="fas fa-map-marker-alt mr-2"> </i>
-                Besides Mulberry Height, Behind Auro University, Village:
-                Bhatpore, Surat
-              </li>
-            </ul>
+          <div class="right flex gap-16 flex-row-reverse lg:flex-row">
+            <div class="mb-8 md:mb-0">
+              <h3
+                class="lg:text-[#A9774E] text-white lg:text-xl text-lg font-Playfair mb-4 break-all"
+              >
+                Quick Links
+              </h3>
+              <ul class="space-y-2">
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="#"> Home </a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="#"> Rooms </a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="#">
+                    Reservation
+                  </a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="#">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="#">
+                    Gallery
+                  </a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="#">
+                    Videos
+                  </a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="#">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="mb-8 md:mb-0 ml-auto">
+              <h3
+                class="lg:text-[#A9774E] text-white lg:text-xl text-lg font-Playfair mb-4"
+              >
+                Contact Us
+              </h3>
+              <ul class="space-y-2">
+                <li class="flex items-center text-gray-400 gap-2">
+                  <img src="/public/assets/phone.svg" alt="" />
+                  +91 - 7567 122 266
+                </li>
+                <li class="flex items-center text-gray-400 gap-2">
+                  <img src="/public/assets/email2.svg" alt="" />
+                  hotelcasariva.surat@gmail.com
+                </li>
+                <li class="flex items-center text-gray-400 gap-2 lg:w-[320px]">
+                  <img src="/public/assets/location.svg" alt="" />
+                  Besides Mulberry Height, Behind Auro University, Village:
+                  Bhatpore, Surat
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+        <div class="flex items-start justify-between mt-4"></div>
       </div>
       <div
         class="border-t border-gray-700 mt-10 pt-4 text-center text-gray-500 text-sm"
