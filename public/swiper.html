@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Riva Hotel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-cover bg-center h-[900px] overflow-hidden">
+    <div class="swiper-container2 h-full">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide flex flex-col items-center justify-center h-[900px] bg-cover bg-black bg-opacity-50 text-white text-center px-4" style="background-image: url('../public/assets/home-bg.png');">
+                <h1 class="text-[24px] w-full lg:text-7xl font-medium font-Playfair mb-4 ">Welcome To</h1>
+                <h2 class="text-[24px] w-full lg:text-7xl font-medium font-Playfair mb-4 ">Casa Riva Hotel</h2>
+                <p class="text-sm lg:text-xl mb-8 max-w-2xl font-normal font-Poppins">Here's some content you can use for a hotel website, including sections for the homepage, about us, rooms and amenities.</p>
+                <div class="absolute bottom-8 cursor-pointer"  id="scroll-button">
+                    <p class="text-sm md:text-base">Scroll To View</p>
+                    <i class="fas fa-chevron-down mt-2"></i>
+                </div>
+            </div>
+            <div class="swiper-slide flex flex-col items-center justify-center h-[900px] bg-cover bg-black bg-opacity-50 text-white text-center px-4" style="background-image: url('../public/assets/home-bg.png');">
+                <h1 class="text-[24px] w-full lg:text-7xl font-medium font-Playfair mb-4 ">Welcome To</h1>
+                <h2 class="text-[24px] w-full lg:text-7xl font-medium font-Playfair mb-4 ">Casa Riva Hotel</h2>
+                <p class="text-sm lg:text-xl mb-8 max-w-2xl font-normal font-Poppins">Here's some content you can use for a hotel website, including sections for the homepage, about us, rooms and amenities.</p>
+                <div class="absolute bottom-8 cursor-pointer"  id="scroll-button">
+                    <p class="text-sm md:text-base">Scroll To View</p>
+                    <i class="fas fa-chevron-down mt-2"></i>
+                </div>
+            </div>
+            <div class="swiper-slide flex flex-col items-center justify-center h-[900px] bg-cover bg-black bg-opacity-50 text-white text-center px-4" style="background-image: url('../public/assets/home-bg.png');">
+                <h1 class="text-[24px] w-full lg:text-7xl font-medium font-Playfair mb-4 ">Welcome To</h1>
+                <h2 class="text-[24px] w-full lg:text-7xl font-medium font-Playfair mb-4 ">Casa Riva Hotel</h2>
+                <p class="text-sm lg:text-xl mb-8 max-w-2xl font-normal font-Poppins">Here's some content you can use for a hotel website, including sections for the homepage, about us, rooms and amenities.</p>
+                <div class="absolute bottom-8 cursor-pointer"  id="scroll-button">
+                    <p class="text-sm md:text-base">Scroll To View</p>
+                    <i class="fas fa-chevron-down mt-2"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container2', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            mousewheel: true,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        document.querySelectorAll('#scroll-button').forEach(button => {
+            button.addEventListener('click', () => {
+                swiper.slideNext();
+            });
+        });
+    </script>
+</body>
+</html>

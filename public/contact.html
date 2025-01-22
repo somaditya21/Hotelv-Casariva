@@ -41,78 +41,31 @@
   </head>
   <body class="font-sans antialiased">
     <!-- header -->
-    <header
-      id="header"
-      class="bg-transparent fixed w-full z-50 transition-all duration-600 text-white"
-    >
-      <div
-        class="container mx-auto px-4 py-3 flex justify-between items-center"
-      >
-        <img
-          class="text-2xl font-bold text-white"
-          src="/public/assets/image 1.png"
-        />
+    <header id="header" class="fixed w-full z-50 transition-all duration-600 bg-transparent text-white">
+      <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <img class="text-2xl font-bold text-white" src="/public/assets/image 1.png">
         <button id="menuToggle" class="lg:hidden text-white text-2xl">
-          &#9776;
+          ☰
         </button>
         <nav id="navbar" class="hidden lg:flex space-x-6">
-          <a href="index.html" class="navLinks text-white hover:text-orange-500"
-            >Home</a
-          >
-          <a href="about.html" class="navLinks text-white hover:text-orange-500"
-            >About Us</a
-          >
-          <a href="rooms.html" class="navLinks text-white hover:text-orange-500"
-            >Rooms</a
-          >
-          <a
-            href="reservation.html"
-            class="navLinks text-white hover:text-orange-500"
-            >Reservation</a
-          >
-          <a
-            href="gallery.html"
-            class="navLinks text-white hover:text-orange-500"
-            >Gallery</a
-          >
-          <a
-            href="contact.html"
-            class="navLinks text-white hover:text-orange-500"
-            >Contact</a
-          >
+          <a href="index.html" class="cursor-pointer font-Poppins font-normal lg:text-lg navLinks text-white">Home</a>
+          <a href="about.html" class="cursor-pointer font-Poppins font-normal lg:text-lg navLinks text-white">About Us</a>
+          <a href="rooms.html" class="cursor-pointer font-Poppins font-normal lg:text-lg navLinks text-white">Rooms</a>
+          <a href="reservation.html" class="cursor-pointer font-Poppins font-normal lg:text-lg navLinks text-white">Reservation</a>
+          <a href="gallery.html" class="cursor-pointer font-Poppins font-normal lg:text-lg navLinks text-white">Gallery</a>
+          <a href="contact.html" class="cursor-pointer font-Poppins font-normal lg:text-lg navLinks text-white">Contact</a>
         </nav>
-        <button
-          type="button"
-          class="btn lg:block hidden btn-outline-white border-white border-2 px-4 py-2 text-white"
-        >
+        <button type="button" class="btn lg:block hidden btn-outline-white border-2 px-4 py-2 text-white border-white">
           Explore
         </button>
       </div>
       <nav id="mobileMenu" class="lg:hidden hidden bg-gray-900">
-        <a href="#" class="block px-4 py-2 text-white hover:bg-orange-500"
-          >Home</a
-        >
-        <a href="#about" class="block px-4 py-2 text-white hover:bg-orange-500"
-          >About Us</a
-        >
-        <a href="#rooms" class="block px-4 py-2 text-white hover:bg-orange-500"
-          >Rooms</a
-        >
-        <a
-          href="#reservation"
-          class="block px-4 py-2 text-white hover:bg-orange-500"
-          >Reservation</a
-        >
-        <a
-          href="gallery.html"
-          class="block px-4 py-2 text-white hover:bg-orange-500"
-          >Gallery</a
-        >
-        <a
-          href="#contact"
-          class="block px-4 py-2 text-white hover:bg-orange-500"
-          >Contact</a
-        >
+        <a href="index.html" class="block px-4 py-2 text-white hover:bg-orange-500">Home</a>
+        <a href="about.html" class="block px-4 py-2 text-white hover:bg-orange-500">About Us</a>
+        <a href="rooms.html" class="block px-4 py-2 text-white hover:bg-orange-500">Rooms</a>
+        <a href="reservation.html" class="block px-4 py-2 text-white hover:bg-orange-500">Reservation</a>
+        <a href="gallery.html" class="block px-4 py-2 text-white hover:bg-orange-500">Gallery</a>
+        <a href="contact.html" class="block px-4 py-2 text-white hover:bg-orange-500">Contact</a>
       </nav>
     </header>
 
@@ -133,158 +86,189 @@
       </div>
     </section>
 
-    <section class="py-16">
-      <div class="bg-no-repeat bg-top container h-auto mx-auto">
-        <div class="flex h-full items-center justify-center py-8">
-          <div
-            class="flex flex-col-reverse flex-reverse-col items-center lg:flex-row max-w-5xl w-full"
-          >
-            <div class="bg-white lg:w-[800px] p-8 shadow-lg z-50">
-              <h2 class="text-2xl font-semibold text-red-800 mb-4">
-                Contact Us
-              </h2>
-              <h3 class="text-xl font-semibold mb-6">Get In Touch With Us</h3>
-              <form>
-                <div class="mb-4">
-                  <input
-                    type="text"
-                    placeholder="Full Name"
-                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-800"
-                  />
-                </div>
-                <div class="mb-4">
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-800"
-                  />
-                </div>
-                <div class="mb-4">
-                  <input
-                    type="text"
-                    placeholder="Subject"
-                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-800"
-                  />
-                </div>
-                <div class="mb-4">
-                  <textarea
-                    placeholder="Message"
-                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-800"
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  class="w-full bg-red-800 text-white py-2 rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-800"
-                >
-                  Submit <i class="fas fa-arrow-right ml-2"></i>
-                </button>
-              </form>
+    <section class="py-24 relative bg-gray-50">
+      <div class=" md:gap-0 md:me-0 md:ms-40 flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-end">
+        <!-- Contact Form -->
+        <div
+          class="bg-white p-6 md:p-12  shadow-lg w-full lg:w-[805px] lg:h-[729px] z-10 relative lg:-mr-16 mt-[-100px] md:mt-0 "
+        >
+          <h2 class="text-3xl md:text-5xl font-thin text-[#A9774E] mb-4 md:mb-6">
+            Contact Us
+          </h2>
+          <h3 class="text-2xl md:text-4xl font-thin mb-4 md:mb-6 text-[#0A0807]">
+            Get In Touch With Us
+          </h3>
+          <form class="mt-6 md:mt-8 space-y-4 md:space-y-6">
+            <div>
+              <input
+                type="text"
+                placeholder="Full Name"
+                class="w-full px-3 md:px-4 py-2 md:py-4 border border-gray-300 "
+              />
             </div>
-            <div
-              class="bg-white h-100 h-[600px] lg:bg-center lg:bg-cover mr-12 p-8 relative lg:right-12 shadow-lg-[#00000017] w-full"
-              style="background-image: url('/public/assets/Rectangle 3850.png')"
-            ></div>
-          </div>
+            <div>
+              <input
+                type="email"
+                placeholder="Email"
+                class="w-full px-3 md:px-4 py-2 md:py-4 border border-gray-300  "
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Subject"
+                class="w-full px-3 md:px-4 py-2 md:py-4 border border-gray-300 "
+              />
+            </div>
+            <div>
+              <textarea
+                placeholder="Message"
+                class="w-full px-3 md:px-4 py-2 md:py-4 border border-gray-300 "
+                rows="4"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-[#A9774E] text-white py-2 md:py-3"
+            >
+              Submit →
+            </button>
+          </form>
+        </div>
+    
+        <!-- Background Image -->
+        <div class="w-full lg:w-[1154px] h-[300px] md:h-[600px] lg:h-[889px] mb-8 lg:mb-0">
+          <img
+            src="../public/assets/Rectangle 3850.png"
+            alt="Background"
+            class="w-full h-full object-cover "
+          />
         </div>
       </div>
     </section>
+    
 
     <!-- Footer  -->
-    <footer class="bg-gray-900 py-16">
+    <footer class="py-16 bg-[#282828]">
       <div class="container mx-auto px-4 py-4">
-        <div class="flex flex-col items-start justify-between md:flex-row mt-4">
-          <div class="mb-8 md:mb-0">
-            <img
-              alt="Hotel Casa Riva logo"
-              class="mb-4"
-              height="100"
-              src="/public/assets/image 1.png"
-              width="100"
-            />
-            <p class="text-gray-400 mb-4">
-              Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga
-              illo laudantium magni sed.
-            </p>
-            <div class="flex space-x-4">
-              <a class="text-gray-400 hover:text-white" href="#">
-                <i class="fab fa-facebook-f"> </i>
-              </a>
-              <a class="text-gray-400 hover:text-white" href="#">
-                <i class="fab fa-twitter"> </i>
-              </a>
-              <a class="text-gray-400 hover:text-white" href="#">
-                <i class="fab fa-google"> </i>
-              </a>
+        <div class="flex justify-between lg:flex-row flex-col">
+          <div class="left flex gap-16">
+            <div class="mb-8 md:mb-0">
+              <img
+                alt="Hotel Casa Riva logo"
+                class="mb-4"
+                height="100"
+                src="/public/assets/image 1.png"
+                width="100"
+              />
+              <p class="text-gray-400 mb-4 lg:w-[320px]">
+                Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga
+                illo laudantium magni sed.
+              </p>
+              <div class="flex space-x-4">
+                <a class="text-gray-400 hover:text-white" href="#">
+                  <img src="/public/assets/fb.svg" alt="" />
+                </a>
+                <a class="text-gray-400 hover:text-white" href="#">
+                  <img src="/public/assets/twitter.svg" alt="" />
+                </a>
+                <a class="text-gray-400 hover:text-white" href="#">
+                  <img src="/public/assets/google.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="mb-8 md:mb-0">
+              <h3
+                class="lg:text-[#A9774E] text-white lg:text-xl text-lg font-Playfair mb-4 break-all"
+              >
+                Explore Us
+              </h3>
+              <ul class="space-y-2">
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="#">
+                    Support
+                  </a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="#"> FAQ's </a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="#">
+                    Warranty
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="mb-8 md:mb-0">
-            <h3 class="text-orange-500 mb-4">Explore Us</h3>
-            <ul class="space-y-2">
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#"> Support </a>
-              </li>
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#"> FAQ's </a>
-              </li>
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#">
-                  Warranty
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="mb-8 md:mb-0">
-            <h3 class="text-orange-500 mb-4">Quick Links</h3>
-            <ul class="space-y-2">
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#"> Home </a>
-              </li>
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#"> Rooms </a>
-              </li>
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#">
-                  Reservation
-                </a>
-              </li>
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#"> Gallery </a>
-              </li>
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#"> Videos </a>
-              </li>
-              <li>
-                <a class="text-gray-400 hover:text-white" href="#"> Contact </a>
-              </li>
-            </ul>
-          </div>
-          <div class="mb-8 md:mb-0">
-            <h3 class="text-orange-500 mb-4">Contact Us</h3>
-            <ul class="space-y-2">
-              <li class="flex items-center text-gray-400">
-                <i class="fas fa-phone-alt mr-2"> </i>
-                +91 - 7567 122 266
-              </li>
-              <li class="flex items-center text-gray-400">
-                <i class="fas fa-envelope mr-2"> </i>
-                hotelcasariva.surat@gmail.com
-              </li>
-              <li class="flex items-center text-gray-400">
-                <i class="fas fa-map-marker-alt mr-2"> </i>
-                Besides Mulberry Height, Behind Auro University, Village:
-                Bhatpore, Surat
-              </li>
-            </ul>
+          <div class="right flex gap-16 flex-row-reverse lg:flex-row">
+            <div class="mb-8 md:mb-0">
+              <h3
+                class="lg:text-[#A9774E] text-white lg:text-xl text-lg font-Playfair mb-4 break-all"
+              >
+                Quick Links
+              </h3>
+              <ul class="space-y-2">
+                <li>
+                  <a class="text-gray-400 hover:text-white cursor-pointer	" href="index.html"> Home </a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white cursor-pointer	" href="rooms.html"> Rooms </a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white cursor-pointer	" href="reservation.html">
+                    Reservation
+                  </a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white cursor-pointer" href="about.html">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white cursor-pointer	 " href="gallery.html">
+                    Gallery
+                  </a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="#">
+                    Videos
+                  </a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="contact.html">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="mb-8 md:mb-0 ml-auto">
+              <h3
+                class="lg:text-[#A9774E] text-white lg:text-xl text-lg font-Playfair mb-4"
+              >
+                Contact Us
+              </h3>
+              <ul class="space-y-2">
+                <li class="flex items-center text-gray-400 gap-2">
+                  <img src="/public/assets/phone.svg" alt="" />
+                  +91 - 7567 122 266
+                </li>
+                <li class="flex items-center text-gray-400 gap-2">
+                  <img src="/public/assets/email2.svg" alt="" />
+                  hotelcasariva.surat@gmail.com
+                </li>
+                <li class="flex items-center text-gray-400 gap-2 lg:w-[320px]">
+                  <img src="/public/assets/location.svg" alt="" />
+                  Besides Mulberry Height, Behind Auro University, Village:
+                  Bhatpore, Surat
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+        <div class="flex items-start justify-between mt-4"></div>
       </div>
       <div
-        class="border-t border-gray-700 mt-10 pt-4 text-center text-gray-500 text-sm"
+        class="border-t border-gray-700 mt-10 pt-4 text-center text-gray-500 lg:text-sm text-[10px]"
       >
         © 2016-23 Copyright. All Rights Reserved. Managed by -
         <a class="text-gray-400 hover:text-white" href="#"> BR Media Net </a>

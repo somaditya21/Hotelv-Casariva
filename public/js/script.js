@@ -1,15 +1,36 @@
-window.addEventListener("DOMContentLoaded", function () {
-  const navLinks = document.querySelectorAll("#navbar a");
-  const currentPage = window.location.pathname.split("/").pop();
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the current page URL path
+  const currentPath = window.location.pathname.split("/").pop();
 
-  // Set active class on the current page link
-  navLinks.forEach((link) => {
-    if (
-      link.getAttribute("href") === currentPage ||
-      (currentPage === "" && link.getAttribute("href") === "#")
-    ) {
-      link.classList.add("text-[#A9774E]", "font-bold");
+  // Select all navbar links
+  const navLinks = document.querySelectorAll(".navLinks");
+
+  navLinks.forEach(link => {
+    // Check if the href matches the current path
+    if (link.getAttribute("href") === currentPath) {
+      // Remove active class from all links
+      navLinks.forEach(nav => nav.classList.remove("text-orange-400", "font-bold", "border-b-2", "border-orange-400"));
+
+      // Add active class to the matched link
+      link.classList.add("text-orange-400", "font-bold", "border-b-2", "border-orange-400");
     }
+  });
+
+  const menuToggle = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const mobileLinks = document.querySelectorAll("#mobileMenu a");
+
+  menuToggle.addEventListener("click", function () {
+    mobileMenu.classList.toggle("hidden");
+    mobileMenu.classList.toggle("block");
+  });
+
+  // Close the menu when a link is clicked
+  mobileLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      mobileMenu.classList.add("hidden");
+      mobileMenu.classList.remove("block");
+    });
   });
 });
 
@@ -78,6 +99,7 @@ const swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
 const swiper3 = new Swiper(".mySwiper2", {
   loop: true,
   pagination: {
@@ -123,20 +145,45 @@ const swiper2 = new Swiper(".swiper-container", {
   },
 });
 
-var swiper4 = new Swiper(".mySwiper4", {
-  direction: "vertical",
+var swiper4 = new Swiper('.swiper-container2', {
+  direction: 'vertical',
+  slidesPerView: 1,
+  mousewheel: true,
+  loop: true,
   pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+      el: '.swiper-pagination',
+      clickable: true,
   },
 });
 
-const menuToggle = document.getElementById("menuToggle");
-const mobileMenu = document.getElementById("mobileMenu");
-
-menuToggle.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
+document.querySelectorAll('#scroll-button').forEach(button => {
+  button.addEventListener('click', () => {
+      swiper.slideNext();
+  });
 });
+
+
+
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const menuToggle = document.getElementById("menuToggle");
+//   const mobileMenu = document.getElementById("mobileMenu");
+//   const mobileLinks = document.querySelectorAll("#mobileMenu a");
+
+//   menuToggle.addEventListener("click", function () {
+//     mobileMenu.classList.toggle("hidden");
+//     mobileMenu.classList.toggle("block");
+//   });
+
+//   // Close the menu when a link is clicked
+//   mobileLinks.forEach(link => {
+//     link.addEventListener("click", function () {
+//       mobileMenu.classList.add("hidden");
+//       mobileMenu.classList.remove("block");
+//     });
+//   });
+// });
 
 // JavaScript for toggling visibility of extra services
 document.getElementById("showMoreBtn").addEventListener("click", function () {
@@ -150,6 +197,8 @@ document.getElementById("showMoreBtn").addEventListener("click", function () {
     this.innerHTML = "Show Less";
     this.querySelector("i").classList.remove("fa-arrow-down");
     this.querySelector("i").classList.add("fa-arrow-up");
+   
+    
   } else {
     this.innerHTML = "Show More Services";
     this.querySelector("i").classList.remove("fa-arrow-up");
