@@ -19,17 +19,35 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.getElementById("menuToggle");
   const mobileMenu = document.getElementById("mobileMenu");
   const mobileLinks = document.querySelectorAll("#mobileMenu a");
+  const menuIcon = document.getElementById("menuIcon");
+
 
   menuToggle.addEventListener("click", function () {
     mobileMenu.classList.toggle("hidden");
     mobileMenu.classList.toggle("block");
+
+    if (mobileMenu.classList.contains("hidden")) {
+      menuIcon.innerHTML = "☰";
+      menuIcon.classList.remove("text-white");
+      menuIcon.style.color = "white"; 
+    } else {
+      menuIcon.innerHTML = "✖";
+      menuIcon.classList.add("text-white");
+        menuIcon.style.color = "white"; 
+    }
   });
+
+  
 
   // Close the menu when a link is clicked
   mobileLinks.forEach(link => {
     link.addEventListener("click", function () {
       mobileMenu.classList.add("hidden");
       mobileMenu.classList.remove("block");
+      menuIcon.innerHTML  = "☰";
+      menuIcon.classList.remove("text-white");
+      menuIcon.style.color = "white"; 
+
     });
   });
 });
@@ -139,6 +157,10 @@ const swiper2 = new Swiper(".swiper-container", {
       spaceBetween: 15,
     },
     414: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    375: {
       slidesPerView: 3,
       spaceBetween: 10,
     },

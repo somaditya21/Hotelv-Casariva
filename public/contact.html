@@ -44,8 +44,8 @@
     <header id="header" class="fixed w-full z-50 transition-all duration-600 bg-transparent text-white">
       <div class="container mx-auto px-4 py-3 flex justify-between items-center">
         <img class="text-2xl font-bold text-white" src="/public/assets/image 1.png">
-        <button id="menuToggle" class="lg:hidden text-white text-2xl">
-          ☰
+        <button id="menuToggle" class="lg:hidden  text-2xl">
+          <span id="menuIcon" class="text-white">☰</span>
         </button>
         <nav id="navbar" class="hidden lg:flex space-x-6">
           <a href="index.html" class="cursor-pointer font-Poppins font-normal lg:text-lg navLinks text-white">Home</a>
@@ -59,7 +59,7 @@
           Explore
         </button>
       </div>
-      <nav id="mobileMenu" class="lg:hidden hidden bg-gray-900">
+      <nav id="mobileMenu" class="lg:hidden hidden bg-gray-900 py-4">
         <a href="index.html" class="block px-4 py-2 text-white hover:bg-orange-500">Home</a>
         <a href="about.html" class="block px-4 py-2 text-white hover:bg-orange-500">About Us</a>
         <a href="rooms.html" class="block px-4 py-2 text-white hover:bg-orange-500">Rooms</a>
@@ -89,9 +89,7 @@
     <section class="py-24 relative bg-gray-50">
       <div class=" md:gap-0 md:me-0 md:ms-40 flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-end">
         <!-- Contact Form -->
-        <div
-          class="bg-white p-6 md:p-12  shadow-lg w-full lg:w-[805px] lg:h-[729px] z-10 relative lg:-mr-16 mt-[-100px] md:mt-0 "
-        >
+        <div class="bg-white lg:-mr-16 lg:h-[729px] lg:w-[805px] md:mt-0 md:p-12 mt-[-100px] p-6 relative shadow-lg w-[345px]  z-10">
           <h2 class="text-3xl md:text-5xl font-thin text-[#A9774E] mb-4 md:mb-6">
             Contact Us
           </h2>
@@ -100,37 +98,18 @@
           </h3>
           <form class="mt-6 md:mt-8 space-y-4 md:space-y-6">
             <div>
-              <input
-                type="text"
-                placeholder="Full Name"
-                class="w-full px-3 md:px-4 py-2 md:py-4 border border-gray-300 "
-              />
+              <input type="text" placeholder="Full Name" class="w-full px-3 md:px-4 py-2 md:py-4 border border-gray-300 ">
             </div>
             <div>
-              <input
-                type="email"
-                placeholder="Email"
-                class="w-full px-3 md:px-4 py-2 md:py-4 border border-gray-300  "
-              />
+              <input type="email" placeholder="Email" class="w-full px-3 md:px-4 py-2 md:py-4 border border-gray-300  ">
             </div>
             <div>
-              <input
-                type="text"
-                placeholder="Subject"
-                class="w-full px-3 md:px-4 py-2 md:py-4 border border-gray-300 "
-              />
+              <input type="text" placeholder="Subject" class="w-full px-3 md:px-4 py-2 md:py-4 border border-gray-300 ">
             </div>
             <div>
-              <textarea
-                placeholder="Message"
-                class="w-full px-3 md:px-4 py-2 md:py-4 border border-gray-300 "
-                rows="4"
-              ></textarea>
+              <textarea placeholder="Message" class="w-full px-3 md:px-4 py-2 md:py-4 border border-gray-300 " rows="4"></textarea>
             </div>
-            <button
-              type="submit"
-              class="w-full bg-[#A9774E] text-white py-2 md:py-3"
-            >
+            <button type="submit" class="w-full bg-[#A9774E] text-white py-2 md:py-3 hover:bg-orange-600">
               Submit →
             </button>
           </form>
@@ -200,7 +179,7 @@
               </ul>
             </div>
           </div>
-          <div class="right flex gap-16 flex-row-reverse lg:flex-row">
+          <div class="flex flex-row-reverse gap-10 lg:flex-row lg:gap-16 right">
             <div class="mb-8 md:mb-0">
               <h3
                 class="lg:text-[#A9774E] text-white lg:text-xl text-lg font-Playfair mb-4 break-all"

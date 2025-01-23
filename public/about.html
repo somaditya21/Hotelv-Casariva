@@ -39,8 +39,8 @@
       <header id="header" class="fixed w-full z-50 transition-all duration-600 bg-transparent text-white">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
           <img class="text-2xl font-bold text-white" src="/public/assets/image 1.png">
-          <button id="menuToggle" class="lg:hidden text-white text-2xl">
-            ☰
+          <button id="menuToggle" class="lg:hidden  text-2xl">
+            <span id="menuIcon" class="text-white">☰</span>
           </button>
           <nav id="navbar" class="hidden lg:flex space-x-6">
             <a href="index.html" class="cursor-pointer font-Poppins font-normal lg:text-lg navLinks text-white">Home</a>
@@ -54,7 +54,7 @@
             Explore
           </button>
         </div>
-        <nav id="mobileMenu" class="lg:hidden hidden bg-gray-900">
+        <nav id="mobileMenu" class="lg:hidden hidden bg-gray-900 py-4">
           <a href="index.html" class="block px-4 py-2 text-white hover:bg-orange-500">Home</a>
           <a href="about.html" class="block px-4 py-2 text-white hover:bg-orange-500">About Us</a>
           <a href="rooms.html" class="block px-4 py-2 text-white hover:bg-orange-500">Rooms</a>
@@ -123,112 +123,153 @@
 
 
     <!-- About Section  -->
-    <section class="py-16">
+    <section class="lg:py-16 py-8 ">
       <div class="container mx-auto px-4">
-        <div class="gap-8 grid grid-cols-1 mb-8 md:grid-cols-2">
-          <div>
-            <img alt="Modern bedroom with elegant decor" class="lg:h-[892px] rounded-lg shadow-lg w-full" src="/public/assets/Rectangle 6 (1).png">
-          </div>
-          <div class="">
-            <p class="font-normal leading-relaxed lg:text-lg mb-6 md:text-sm text-[#9C8B8A] text-lg">Looking forward to a warm welcome, pleasant ambience, nice cle rooms, comfortable bed to stretch on and lots more???.... Look no further.. Simply step into "CASA RIVA HOTEL" located at Bhatpore village in Surat.. Ea of our rooms with their simple, fresh and warm style, and welcoming ambience meet current city design and comfort standards. All 54 keys in  property have pleasant and neatly appointed rooms. We at CASA R know what it means to come from a long and tiring trip and to long for a genuine welcome and a good drink and a soft bed to relax on and so many other services…..</p>
-            <p class="font-normal leading-relaxed lg:text-lg mb-6 md:text-sm text-[#9C8B8A] text-lg">So if you enjoy being treated like a king, you’ve come to the right place! Families and business people love us, too. The deluxe interiorsrooms are completed by LCD television, high-speed internet connection, mini refrigerator and a modern bathroom ..</p>
-          <p class="font-normal leading-relaxed lg:text-lg mb-6 md:text-sm text-[#9C8B8A] text-lg">Enjoy a lavish meal at our Salt Water Restaurant The Garden multcuisine restaurant with eight elegant gazebos and a seating capac about 150 persons. The food made by the Chefs' here comes with a personalized touch and perfection. Or, simply chill out at Surahi – the 12th floor multi cuisine restaurant that serves the guests staying in-house.</p><p class="font-normal leading-relaxed lg:text-lg mb-4 md:text-sm text-[#9C8B8A] text-lg">The grandeur of our banquet hall and the plush green velvety lawns add elegance to the functions like engagements, get to gathers, college graduations, family vacations, re-unions, birthday celebrations and enhance your happiness.. We’ve would love to host college graduations, family vacations, re-unions, birthday celebrations, meetings and training programs. Our appeal to such a wide range of clientele might have to do with our proximity to the airport, attention to detail and making it all very personal. Hotel CASA RIVA - Where luxury meets comfort.</p></div>
-        </div>
-        <div class="gap-8 grid grid-cols-1 items-center mb-8 md:grid-cols-2">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:mb-8 relative">
           <div class="relative">
-            <img alt="Historic building illuminated at night" class="w-full h-auto rounded-lg shadow-lg" src="/public/assets/Rectangle 6 (2).png">
-            <div class="absolute top-0 left-0 text-9xl text-gray-200 font-bold opacity-50">
+            <img alt="Modern bedroom with elegant decor" class="w-full h-auto shadow-lg z-10" src="/public/assets/Rectangle 6 (1).png">
+            <img src="/public/assets/Group 13.png" alt="" class="absolute top-[-60px] left-[-50px] hidden lg:block">
+            <img src="/public/assets/Vector 1.png" alt="" class="absolute top-[0px] right-[-20px]  hidden lg:block">
+            <img src="/public/assets/Vector 2.png" alt="" class="absolute top-[690px] left-[-20px]  hidden lg:block">
+          </div>
+          <div class="absolute top-[40%] left-[-120px]  hidden lg:block" style="z-index: -9;">
+            <img src="/public/assets/Rectangle 19426.png" alt="">
+          </div>
+          <!-- <div class="absolute top-0">
+          </div> -->
+          <div class="lg:pl-10">
+            <p class="text-lg leading-relaxed mb-4" style="color: rgba(156, 139, 138, 1);">
+              Looking forward to a modern well-being, passionate endeavors, new
+              ideas, sports, and entertainment. Our hotel offers a wide range of
+              services to make your stay as comfortable and enjoyable as
+              possible. From luxurious rooms and suites to fine dining and
+              state-of-the-art fitness facilities, we have everything you need
+              to relax and unwind. Our friendly and professional staff is always
+              on hand to assist you with any requests or needs you may have. We
+              look forward to welcoming you to our hotel and making your stay a
+              memorable one.
+            </p>
+            <p class="text-lg leading-relaxed mb-4" style="color: rgba(156, 139, 138, 1);">
+              For your well-being, we offer a fully serviced spa, the best gym,
+              and a heated swimming pool. Our hotel is also equipped with a
+              business center, conference rooms, and high-speed internet access
+              to cater to all your business needs. We also offer a variety of
+              dining options, from casual cafes to fine dining restaurants,
+              serving a range of cuisines to suit all tastes.
+            </p>
+            <p class="text-lg leading-relaxed mb-4" style="color: rgba(156, 139, 138, 1);">
+              Enjoy a lavish meal at our Salt Water Restaurant The Garden multcuisine restaurant with eight elegant
+              gazebos and a seating capac about 150 persons. The food made by the Chefs' here comes with a personalized
+              touch and perfection. Or, simply chill out at Surahi – the 12th floor multi cuisine restaurant that serves
+              the guests staying in-house.
+            </p>
+            <p class="text-lg leading-relaxed mb-4" style="color: rgba(156, 139, 138, 1);">
+              The grandeur of our banquet hall and the plush green velvety lawns add elegance to the functions like
+              engagements, get to gathers, college graduations, family vacations, re-unions, birthday celebrations and
+              enhance your happiness.. We’ve would love to host college graduations, family vacations, re-unions, birthday
+              celebrations, meetings and training programs. Our appeal to such a wide range of clientele might have to do
+              with our proximity to the airport, attention to detail and making it all very personal. Hotel CASA RIVA -
+              Where luxury meets comfort.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 lg:mt-[80px] relative">
+          <div class="absolute top-0 left-[-120px]  lg:block hidden">
+            <img src="/public//assets/01.png" alt="">
+          </div>
+          <div class="relative">
+            <img alt="Historic building illuminated at night" class="w-full h-auto  shadow-lg" src="/public/assets/Rectangle 6 (2).png">
+            <!-- <div class="absolute top-0 left-0 text-9xl text-gray-200 font-bold opacity-50">
               01
-            </div>
+            </div> -->
           </div>
-          <div>
-            <h2 class="font-Playfair font-bold lg:text-5xl mb-4 text-3xl text-[#A9774E]">Vision</h2>
-            <p class="font-normal leading-relaxed lg:text-lg mb-6 md:text-sm text-[#9C8B8A] text-lg">
+          <div class=" content-center">
+            <h2 class="text-3xl font-bold mb-4" style="font-size: 48px; color:rgba(169, 119, 78, 1);">Vision</h2>
+            <p class="text-lg leading-relaxed mb-4" style="color: rgba(156, 139, 138, 1);">
               The ultimate vision of CASA SOUL is to stand out as the preferred
               hotel with the highest standards of hospitality, service, and
               quality.
             </p>
-            <p class="font-normal leading-relaxed lg:text-lg mb-6 md:text-sm text-[#9C8B8A] text-lg">
+            <p class="text-lg leading-relaxed mb-4" style="color: rgba(156, 139, 138, 1);">
               We are focused on providing an outstanding professional, ethical,
               and transparent service to our guests.
             </p>
-            <p class="font-normal leading-relaxed lg:text-lg mb-6 md:text-sm text-[#9C8B8A] text-lg">
+            <p class="text-lg leading-relaxed mb-4" style="color: rgba(156, 139, 138, 1);">
               We aim to exceed our guests' expectations and experience our
               commitment to excellence and dedication.
             </p>
           </div>
         </div>
-        <div class="gap-8 grid grid-cols-1 items-center mb-8 md:grid-cols-2">
-          <div>
-            <h2 class="font-Playfair font-bold lg:text-5xl mb-4 text-3xl text-[#A9774E]">Mission</h2>
-            <p class="font-normal leading-relaxed lg:text-lg mb-6 md:text-sm text-[#9C8B8A] text-lg">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 relative">
+          <div class="content-center">
+            <h2 class="text-3xl font-bold mb-4" style="font-size: 48px; color:rgba(169, 119, 78, 1);">Mission</h2>
+            <p class="text-lg leading-relaxed mb-4 mt-10" style="color: rgba(156, 139, 138, 1);">
               The ultimate vision of CASA SOUL is to stand out as the preferred
               hotel with the highest standards of hospitality, service, and
               quality.
             </p>
-            <p class="font-normal leading-relaxed lg:text-lg mb-6 md:text-sm text-[#9C8B8A] text-lg">
+            <p class="text-lg leading-relaxed mb-4" style="color: rgba(156, 139, 138, 1);">
               We are focused on providing an outstanding professional, ethical,
               and transparent service to our guests.
             </p>
-            <p class="font-normal leading-relaxed lg:text-lg mb-6 md:text-sm text-[#9C8B8A] text-lg">
+            <p class="text-lg leading-relaxed mb-4" style="color: rgba(156, 139, 138, 1);">
               We aim to exceed our guests' expectations and experience our
               commitment to excellence and dedication.
             </p>
           </div>
+          <!-- <div class="absolute top-0 right-[-120px] lg:block hidden">
+            <img src="/public/assets/02.png" alt="">
+          </div>         -->
           <div class="relative">
-            <img alt="Luxurious hotel building at night" class="w-full h-auto rounded-lg shadow-lg" src="/public/assets/Rectangle 6 (3).png">
-            <div class="absolute top-0 left-0 text-9xl text-gray-200 font-bold opacity-50">
-              02
-            </div>
+            <img alt="Luxurious hotel building at night" class="w-full h-auto  shadow-lg" src="/public/assets/Rectangle 6 (3).png">
           </div>
         </div>
       </div>
     </section>
-
     <!-- Services Section -->
-    <section class="py-16 bg-white">
-      <div class="container mx-auto px-6 lg:px-12">
+    <section id="features" class="lg:py-16 bg-white">
+      <div class="container lg:px-12 lg:py-0 mx-auto px-6 py-4">
         <div class="grid md:grid-cols-3 gap-8 items-center">
           <!-- Left Column (Text for "Comfy Rooms" and "Sapphire Banquet Hall") -->
           <div class="flex flex-col-reverse md:flex-col space-y-6 md:space-y-0">
             <div>
-              <h3 class="font-Playfair font-bold lg:text-2xl	 mb-4 text-3xl text-[#A9774E]">Comfy Rooms</h3>
-              <p class="font-normal leading-relaxed lg:text-lg mb-6 md:text-sm text-[#9C8B8A] text-lg">
+              <h3 class="text-xl font-semibold text-gray-800 lg:text-right" style="font-size: 25px; font-weight: 600px; color:rgba(169, 119, 78, 1);">Comfy Rooms</h3>
+              <p class="text-gray-600 pt-[18px]" style="font-size: 18px; font-weight: 400; color:rgba(156, 139, 138, 1)">
                 The hotel offers 54 well-appointed, spacious, and neat rooms for
                 you to relax during your stay here.
               </p>
             </div>
-            <div>
-              <h3 class="font-Playfair font-bold lg:text-2xl	 mb-4 text-3xl text-[#A9774E]">
+            <div class="lg:pt-[45px]">
+              <h3 class="text-xl font-semibold text-gray-800 lg:text-right" style="font-size: 25px; font-weight: 600px; color:rgba(169, 119, 78, 1);">
                 Sapphire Banquet Hall
               </h3>
-              <p class="font-normal leading-relaxed lg:text-lg mb-6 md:text-sm text-[#9C8B8A] text-lg">
+              <p class="text-gray-600 lg:text-right pt-[18px]" style="font-size: 18px; font-weight: 400; color: rgba(156, 139, 138, 1);">
                 The hotel also has a banquet hall that measures approx. 8500 sq
                 ft, with a height of about 22 feet. Ideal for weddings and
                 receptions in Surat.
               </p>
             </div>
           </div>
-
+  
           <!-- Center Image -->
           <div class="order-first md:order-none">
             <img src="/public/assets/Rectangle 6 (4).png" alt="Comfy Room" class="rounded-lg shadow-lg w-full object-cover">
           </div>
-
+  
           <!-- Right Column (Text for "Salt Water Restaurant" and "Party Lawns") -->
           <div class="flex flex-col space-y-6">
             <div>
-              <h3 class="font-Playfair font-bold lg:text-2xl	 mb-4 text-3xl text-[#A9774E]">
+              <h3 class="text-xl font-semibold text-gray-800" style="font-size: 25px; font-weight: 600px; color:rgba(169, 119, 78, 1);">
                 Salt Water Restaurant
               </h3>
-              <p class="font-normal leading-relaxed lg:text-lg mb-6 md:text-sm text-[#9C8B8A] text-lg">
+              <p class="text-gray-600 pt-[18px]" style="font-size: 18px; font-weight: 400; color: rgba(156, 139, 138, 1);">
                 The pure vegetarian open garden restaurant with 8 gazebos and a
                 seating of approx. 150 persons.
               </p>
             </div>
-            <div>
-              <h3 class="font-Playfair font-bold lg:text-2xl	 mb-4 text-3xl text-[#A9774E]">Party Lawns</h3>
-              <p class="font-normal leading-relaxed lg:text-lg mb-6 md:text-sm text-[#9C8B8A] text-lg">
+            <div class="lg:pt-[45px]">
+              <h3 class="text-xl font-semibold text-gray-800 " style="font-size: 25px; font-weight: 600px; color:rgba(169, 119, 78, 1);">Party Lawns</h3>
+              <p class="lg:pt-[18px] text-gray-600" style="font-size: 18px; font-weight: 400; color: rgba(156, 139, 138, 1);">
                 Plush velvety green party lawns – Salt Water &amp; Sapphire – each
                 with a capacity to cater up to 500 people can be your preferred
                 location for any occasion.
@@ -238,7 +279,6 @@
         </div>
       </div>
     </section>
-
     <!-- Footer  -->
     <footer class="py-16 bg-[#282828]">
       <div class="container mx-auto px-4 py-4">
@@ -291,7 +331,7 @@
               </ul>
             </div>
           </div>
-          <div class="right flex gap-16 flex-row-reverse lg:flex-row">
+          <div class="flex flex-row-reverse gap-10 lg:flex-row lg:gap-16 right">
             <div class="mb-8 md:mb-0">
               <h3
                 class="lg:text-[#A9774E] text-white lg:text-xl text-lg font-Playfair mb-4 break-all"

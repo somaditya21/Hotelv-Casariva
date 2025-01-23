@@ -44,8 +44,8 @@
     <header id="header" class="fixed w-full z-50 transition-all duration-600 bg-transparent text-white">
       <div class="container mx-auto px-4 py-3 flex justify-between items-center">
         <img class="text-2xl font-bold text-white" src="/public/assets/image 1.png">
-        <button id="menuToggle" class="lg:hidden text-white text-2xl">
-          ☰
+        <button id="menuToggle" class="lg:hidden  text-2xl">
+          <span id="menuIcon" class="text-white">☰</span>
         </button>
         <nav id="navbar" class="hidden lg:flex space-x-6">
           <a href="index.html" class="cursor-pointer font-Poppins font-normal lg:text-lg navLinks text-white">Home</a>
@@ -59,7 +59,7 @@
           Explore
         </button>
       </div>
-      <nav id="mobileMenu" class="lg:hidden hidden bg-gray-900">
+      <nav id="mobileMenu" class="lg:hidden hidden bg-gray-900 py-4">
         <a href="index.html" class="block px-4 py-2 text-white hover:bg-orange-500">Home</a>
         <a href="about.html" class="block px-4 py-2 text-white hover:bg-orange-500">About Us</a>
         <a href="rooms.html" class="block px-4 py-2 text-white hover:bg-orange-500">Rooms</a>
@@ -87,13 +87,12 @@
     </section>
 
     <!-- Gallery -->
-
     <section class="py-16">
       <div class="container mx-auto p-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <img alt="Entrance of a historic building with intricate designs" class="w-full h-auto" src="/public/assets/gallery1.png">
-          <img alt="Modern interior with a large chandelier and glass ceiling" class="w-full h-auto" src="/public/assets/gallery2.png">
-          <img alt="Luxurious hallway with elegant lighting and decor" class="w-full h-auto" src="/public/assets/gallery3.png">
+          <img alt="Modern interior with a large chandelier and glass ceiling" class="h-auto" src="/public/assets/gallery2.png">
+          <img alt="Luxurious hallway with elegant lighting and decor" class="h-auto hidden lg:block w-full" src="/public/assets/gallery3.png">
           <img alt="Cozy living room with wooden furniture and warm lighting" class="w-full h-auto col-span-2" src="/public/assets/gallery4.png">
           <img alt="Stylish living room with modern furniture and wallpaper" class="w-full h-auto" src="/public/assets/gallery5.png">
           <img alt="Outdoor seating area with a view of the ocean at sunset" class="w-full h-auto" src="/public/assets/gallery6.png">
@@ -104,13 +103,16 @@
           </div>
         </div>
         <div class="flex justify-center mt-4">
-          <button class="bg-brown-500 text-white py-2 px-4 rounded-full">
+          <button class="bg-[#d4a373] text-white py-2 px-4 flex hover:bg-orange-600 ">
             Load More
-            <i class="fas fa-chevron-down"> </i>
+            <img src="/public/assets/arrow-right.svg" class="ml-2">
           </button>
         </div>
       </div>
     </section>
+
+    
+
 
     <!-- Footer  -->
     <footer class="py-16 bg-[#282828]">
@@ -164,7 +166,7 @@
               </ul>
             </div>
           </div>
-          <div class="right flex gap-16 flex-row-reverse lg:flex-row">
+          <div class="flex flex-row-reverse gap-10 lg:flex-row lg:gap-16 right">
             <div class="mb-8 md:mb-0">
               <h3
                 class="lg:text-[#A9774E] text-white lg:text-xl text-lg font-Playfair mb-4 break-all"
